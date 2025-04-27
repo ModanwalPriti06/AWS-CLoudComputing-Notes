@@ -41,4 +41,51 @@
 - 🔹 S3 Presigned URLs (Secure Temporary Access)
 - 🔹 Encrypting Data in S3 (SSE-S3, SSE-KMS)
 
+---
+# Cloud Computing
+
+## What is Cloud Computing?
+- Cloud computing is the delivery of on-demand computing services over the internet on a pay-as-you-go basis.
+- Cloud computing means storing and accessing data, applications, and services over the internet instead of your computer’s hard drive.
+-  Instead of buying and maintaining physical servers and storage, you use someone else's servers (like AWS, Microsoft Azure, or Google Cloud) and access them online.
+- <img width="618" height='500' alt="Screenshot 2025-04-27 at 4 57 16 PM" src="https://github.com/user-attachments/assets/40db001f-b632-4581-94c5-20f59ae324a8" />
+
+### Key benefits of cloud computing:
+
+- You pay only for what you use (no huge upfront cost).
+- Cost Saving, Speed, productivity, Performance (secure and upgrade), Reliability.
+- You can scale up or down easily
+- You can access services from anywhere with internet
+  
+## Types of Cloud Computing:
+
+<img width="703" height='500' alt="Screenshot 2025-04-27 at 5 00 44 PM" src="https://github.com/user-attachments/assets/62ff4f12-25c2-46bd-a5f4-a2b0d8ca598d" />
+<img width="503" height='300' alt="Screenshot 2025-04-27 at 5 18 39 PM" src="https://github.com/user-attachments/assets/163418b7-9ffc-4b2f-8f3c-831870b7ede4" />
+<img width="503" height='350' alt="Screenshot 2025-04-27 at 5 22 07 PM" src="https://github.com/user-attachments/assets/35cb9e61-82f4-4167-9019-ee910df35486" />
+<img width="1138" alt="Screenshot 2025-04-27 at 5 24 50 PM" src="https://github.com/user-attachments/assets/262d5e63-ca6b-495a-948d-237f50a07a2a" />
+
+## Cloude provider
+- AWS (Amazon Web Service)
+- Microsoft Azure
+- IBM Cloud
+- vmware
+- Google Cloud platform
+- Digital Ocean
+
+## Lifecycle of a Cloud COmputing Solution
+1. Define the purpose: Understand the requirement of the business and determine what type of application to run on the cloud.
+2. Define the hardware: (Lmbda, EC2, Elastic Container Service) Choose a cmpute service that will provide the rights support where you resize the compute capacity in the cloud to run application aprogram.
+3. Define the Storage: (S3, EFS, Glacier) Choose a storage service where you can backup and archive your data over the internet.
+4. Define the Network: (VPS, Route S3, Direct Connect) Define the network that securley deliver data, videos, application etc. with low latancy and high transfer speed.
+5. Define Security: (IAM, KMS, Cognito): only authorized can access of AWS resoures.
+6. Define Management processes and Tools: (Cloud Watch, Auto Scaling, Cloud Formation).
+7. Testing the process: (CodeSTar, CodeBuild, Codepipeline) Verify the process using AWS developer tools.
+8. Analytics: Athena, EMR, CloudSearch
+   
+
+
+
+
+
+
 
