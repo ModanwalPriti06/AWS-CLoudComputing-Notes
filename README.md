@@ -80,7 +80,19 @@
 5. Define Security: (IAM, KMS, Cognito): only authorized can access of AWS resoures.
 6. Define Management processes and Tools: (Cloud Watch, Auto Scaling, Cloud Formation).
 7. Testing the process: (CodeSTar, CodeBuild, Codepipeline) Verify the process using AWS developer tools.
-8. Analytics: Athena, EMR, CloudSearch
+8. Analytics: Athena, EMR, CloudSearch.
+
+---
+# AWS (Amazon Web Service)
+- AWS (Amazon Web Services) is a platform provided by Amazon that offers cloud services — like storage, servers, databases, security, and more — over the internet.
+- 👉 Instead of buying your own computers or servers, you rent them from AWS and pay only for what you use.
+- Need space to store files? 📦 → AWS gives you S3 (Storage service).
+- Need a computer to run apps? 💻 → AWS gives you EC2 (Virtual server).
+- Need a database to store users' data? 📚 → AWS gives you RDS (Database service).
+- Want to run code without buying any server? ⚡ → AWS gives you Lambda (Serverless compute).
+
+<img width="1437" height="500" alt="Screenshot 2025-04-27 at 5 52 05 PM" src="https://github.com/user-attachments/assets/c6cf8bf2-fae9-443d-a204-9db485212ef2" />
+
    
 
 
