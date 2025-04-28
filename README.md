@@ -92,8 +92,24 @@
 - Want to run code without buying any server? ⚡ → AWS gives you Lambda (Serverless compute).
 
 <img width="1437" height="500" alt="Screenshot 2025-04-27 at 5 52 05 PM" src="https://github.com/user-attachments/assets/c6cf8bf2-fae9-443d-a204-9db485212ef2" />
+<img width="879" alt="Screenshot 2025-04-27 at 11 19 05 PM" src="https://github.com/user-attachments/assets/8b8c0d7f-730f-44d9-8b54-6880021ea2e2" />
 
-   
+# S3 Bucket
+- Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance
+  
+## Benefits
+1. Scalability
+2. Durability and availability
+3. Security and data protection
+4. Lowest price and highest performance
+
+Use cases
+- Build a data lake
+- Backup and restore critical data
+- Archive data at the lowest cost
+- Generative AI
+
+# EC2
 
 
 
