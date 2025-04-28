@@ -72,7 +72,7 @@
 - Google Cloud platform
 - Digital Ocean
 
-## Lifecycle of a Cloud COmputing Solution
+## Lifecycle of a Cloud Computing Solution
 1. Define the purpose: Understand the requirement of the business and determine what type of application to run on the cloud.
 2. Define the hardware: (Lmbda, EC2, Elastic Container Service) Choose a cmpute service that will provide the rights support where you resize the compute capacity in the cloud to run application aprogram.
 3. Define the Storage: (S3, EFS, Glacier) Choose a storage service where you can backup and archive your data over the internet.
