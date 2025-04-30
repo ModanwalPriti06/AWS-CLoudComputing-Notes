@@ -26,6 +26,7 @@
 
 # Learn AWS S3 (Cloud Storage)
 ##  Beginner Level (Basic File Storage)
+
 - 🔹 Create an S3 Bucket
 - 🔹 Upload, Download, and Delete Files in S3
 - 🔹 Bucket Policies & Permissions (Public vs Private Access)
@@ -109,7 +110,10 @@ Use cases
 - Archive data at the lowest cost
 - Generative AI
 
-# EC2
+# EC2 - (Elastic Compute vghui
+- Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 reduces hardware costs so you can develop and deploy applications faster.
+<img width="896" alt="Screenshot 2025-04-28 at 10 48 16 PM" src="https://github.com/user-attachments/assets/c78516df-ebdd-4442-8013-647f2fda7e96" />
+
 
 
 
