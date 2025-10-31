@@ -114,8 +114,7 @@ Use cases
 - Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 reduces hardware costs so you can develop and deploy applications faster.
 <img width="896" alt="Screenshot 2025-04-28 at 10 48 16 PM" src="https://github.com/user-attachments/assets/c78516df-ebdd-4442-8013-647f2fda7e96" />
 
-
-
+# -------------------------------------------------------------------------
 
 
 
