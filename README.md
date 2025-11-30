@@ -43,9 +43,62 @@
 - 🔹 Encrypting Data in S3 (SSE-S3, SSE-KMS)
 
 ---
-# Cloud Computing
 
-## What is Cloud Computing?
+# S3 Bucket
+- Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance
+  
+## Benefits
+1. Scalability
+2. Durability and availability
+3. Security and data protection
+4. Lowest price and highest performance
+
+Use cases
+- Build a data lake
+- Backup and restore critical data
+- Archive data at the lowest cost
+- Generative AI
+
+# EC2 - (Elastic Compute Cloud)
+- Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 reduces hardware costs so you can develop and deploy applications faster.
+<img width="896" alt="Screenshot 2025-04-28 at 10 48 16 PM" src="https://github.com/user-attachments/assets/c78516df-ebdd-4442-8013-647f2fda7e96" />
+
+---
+
+# ----------------------YOUTUBE AWS----------------------
+
+
+# What is visualization?
+Virtualization = Making a fake (virtual) computer inside your real computer. So If you have windows and want to work on different OS (linux or mac) then u need to create layer then above can run virtual machine (macOs, Linux, windows.) The layer which help to manage real and virtual machine caller hypervisor.
+
+> [!Note]
+> Host OS (Your real machine)
+
+### Benefits of VM
+- No need buy bew machine for work on different OS.
+- No risk of any issues with your primary OS.
+- Testing any app on different OS.
+
+### Usecases of VM
+- Cheap
+- Reduce
+- Easy backup using snapshot
+- Easy recovery
+  
+### How Hypervisor Work?
+- VirtualBox shares hardware resources with the Host OS.
+(CPU, memory, storage, network, etc.)
+- Each virtual machine gets its own virtual CPU, RAM, storage, and devices.
+These are simulated by the hypervisor.
+- Virtual machines are fully isolated.
+Each VM runs independently and does not affect the host OS or other VMs.
+
+### Type of Hypervisor.
+
+1. Type1 (Bare Metal) - Is type ke hypervisor direct h/w par install hote hai. No any Host machine. (Used by cloud provider and enterprise servers)
+2. Type2 (hosted) - Hostel Hypervisor because your virtual machine hosted on your real machine (Host OS)
+   
+# What is Cloud Computing?
 - Cloud computing is the delivery of on-demand computing services over the internet on a pay-as-you-go basis.
 - Cloud computing means storing and accessing data, applications, and services over the internet instead of your computer’s hard drive.
 -  Instead of buying and maintaining physical servers and storage, you use someone else's servers (like AWS, Microsoft Azure, or Google Cloud) and access them online.
@@ -82,8 +135,22 @@
 6. Define Management processes and Tools: (Cloud Watch, Auto Scaling, Cloud Formation).
 7. Testing the process: (CodeSTar, CodeBuild, Codepipeline) Verify the process using AWS developer tools.
 8. Analytics: Athena, EMR, CloudSearch.
+   
+## Few feature commonly offered by cloud providers:
+- Compute services
+- storage services
+- Database services
+- Netwroking services
+- Container services
+- serverless computing
+- Machine learning services
+- Identity and Access Management
+- Monitoring and Logging
+- API Management
+- Data analytics services
+- Virtual Private Cloud
+- CDN
 
----
 # AWS (Amazon Web Service)
 - AWS (Amazon Web Services) is a platform provided by Amazon that offers cloud services — like storage, servers, databases, security, and more — over the internet.
 - 👉 Instead of buying your own computers or servers, you rent them from AWS and pay only for what you use.
@@ -95,63 +162,12 @@
 <img width="1437" height="500" alt="Screenshot 2025-04-27 at 5 52 05 PM" src="https://github.com/user-attachments/assets/c6cf8bf2-fae9-443d-a204-9db485212ef2" />
 <img width="879" alt="Screenshot 2025-04-27 at 11 19 05 PM" src="https://github.com/user-attachments/assets/8b8c0d7f-730f-44d9-8b54-6880021ea2e2" />
 
-# S3 Bucket
-- Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance
-  
-## Benefits
-1. Scalability
-2. Durability and availability
-3. Security and data protection
-4. Lowest price and highest performance
 
-Use cases
-- Build a data lake
-- Backup and restore critical data
-- Archive data at the lowest cost
-- Generative AI
+### What make AWS so special?
+- Scalabilit, Global Reach, Reliability, Security.
 
-# EC2 - (Elastic Compute Cloud)
-- Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 reduces hardware costs so you can develop and deploy applications faster.
-<img width="896" alt="Screenshot 2025-04-28 at 10 48 16 PM" src="https://github.com/user-attachments/assets/c78516df-ebdd-4442-8013-647f2fda7e96" />
-
-# ----------------------YOUTUBE AWS----------------------
-
-
-# What is visualization?
-Virtualization = Making a fake (virtual) computer inside your real computer. So If you have windows and want to work on different OS (linux or mac) then u need to create layer then above can run virtual machine (macOs, Linux, windows.) The layer which help to manage real and virtual machine caller hypervisor.
-
-> [!Note]
-> Host OS (Your real machine)
-
-### Benefits of VM
-- No need buy bew machine for work on different OS.
-- No risk of any issues with your primary OS.
-- Testing any app on different OS.
-
-### Usecases of VM
-- Cheap
-- Reduce
-- Easy backup using snapshot
-- Easy recovery
-  
-### How Hypervisor Work?
-- VirtualBox shares hardware resources with the Host OS.
-(CPU, memory, storage, network, etc.)
-- Each virtual machine gets its own virtual CPU, RAM, storage, and devices.
-These are simulated by the hypervisor.
-- Virtual machines are fully isolated.
-Each VM runs independently and does not affect the host OS or other VMs.
-
-### Type of Hypervisor.
-
-1. Type1 (Bare Metal) - Is type ke hypervisor direct h/w par install hote hai. No any Host machine. (Used by cloud provider and enterprise servers)
-2. Type2 (hosted) - Hostel Hypervisor because your virtual machine hosted on your real machine (Host OS)
-   
-# What is Cloud Computing.
-
-
-
-
+>[!Important]
+>AWS Prasent Market (As per CRN report): Cloud Market Share Q2 2024| AWS: 32%| Microsoft: 23%| Google Cloud:12%
 
 
 
