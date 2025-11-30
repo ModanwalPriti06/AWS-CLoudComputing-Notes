@@ -114,7 +114,64 @@ Use cases
 - Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing capacity in the Amazon Web Services (AWS) Cloud. Using Amazon EC2 reduces hardware costs so you can develop and deploy applications faster.
 <img width="896" alt="Screenshot 2025-04-28 at 10 48 16 PM" src="https://github.com/user-attachments/assets/c78516df-ebdd-4442-8013-647f2fda7e96" />
 
-# ---------------------------------------------------------------------
+# ----------------------YOUTUBE AWS----------------------
+
+
+# What is visualization?
+Virtualization = Making a fake (virtual) computer inside your real computer. So If you have windows and want to work on different OS (linux or mac) then u need to create layer then above can run virtual machine (macOs, Linux, windows.) The layer which help to manage real and virtual machine caller hypervisor.
+
+> [!Note]
+> Host OS (Your real machine)
+
+### Benefits of VM
+- No need buy bew machine for work on different OS.
+- No risk of any issues with your primary OS.
+- Testing any app on different OS.
+
+### Usecases of VM
+- Cheap
+- Reduce
+- Easy backup using snapshot
+- Easy recovery
+  
+### How Hypervisor Work?
+- VirtualBox shares hardware resources with the Host OS.
+(CPU, memory, storage, network, etc.)
+- Each virtual machine gets its own virtual CPU, RAM, storage, and devices.
+These are simulated by the hypervisor.
+- Virtual machines are fully isolated.
+Each VM runs independently and does not affect the host OS or other VMs.
+
+### Type of Hypervisor.
+
+1. Type1 (Bare Metal) - Is type ke hypervisor direct h/w par install hote hai. No any Host machine. (Used by cloud provider and enterprise servers)
+2. Type2 (hosted) - Hostel Hypervisor because your virtual machine hosted on your real machine (Host OS)
+   
+# What is Cloud Computing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
