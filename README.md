@@ -164,17 +164,42 @@ Each VM runs independently and does not affect the host OS or other VMs.
 
 
 ### What make AWS so special?
-- Scalabilit, Global Reach, Reliability, Security.
+Scalabilit, Global Reach, Reliability, Security.
+
+### Popular Services Provided by AWS
+Most popular ones inlcuded **EC2** for scalable compute capacity. **S3** for highly reliable storage, **RDS** for managed databases, **Lambda** for serverless computing, and **CloundFront** for delivery.
 
 >[!Important]
 >AWS Prasent Market (As per CRN report): Cloud Market Share Q2 2024| AWS: 32%| Microsoft: 23%| Google Cloud:12%
 
+# IAM: 
+- Free Service: IAM is offered at no additional cost
+- Global Service
+- Root account created by default, shouldn't be used or shared.
 
+#### Create Users
+You can create individual user accounts for people who need access to your AWS resources.
 
+#### Assign Permissions
+You can assign specific permissions to users, groups, or roles to control what actions they can perform on AWS services.
 
+#### Create Groups
+You can group users together and assign permissions to the group, making management easier for multiple users.
 
+#### Create Roles
+You can create roles to assign temporary permissions to AWS services or users. This is especially useful for securely managing permissions across different AWS resources.
 
+#### Define Policies
+You can create and attach custom policies to define fine-grained permissions for controlling access to AWS resources.
 
+#### Manage Federated Access
+IAM allows integration with external identity providers (such as Active Directory) for centralized management of user access across AWS.
+
+## MFA (Multi Factor Authentication)
+- MFA is a extra layer of security that require user to provide two or more forms of verification, like a password and a code from their phone, to access the account. (username + password + securitypassword).
+- MFA must be active for root user.
+
+# Ways of accessing AWS 
 
 
 
