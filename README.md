@@ -211,9 +211,16 @@ https://253647676357.signin.aws.amazon.com/console
 - AWS SDKs & APIs (for programming languages)
 - AWS CloudFormation / IaC (Infrastructure as Code)
 
-<img width="559" height="601" alt="Screenshot 2025-12-01 at 6 36 24 PM" src="https://github.com/user-attachments/assets/c9d52ff6-b9ae-4014-92c5-30ea52bcf445" />
+<img width="759" height="601" alt="Screenshot 2025-12-01 at 6 36 24 PM" src="https://github.com/user-attachments/assets/c9d52ff6-b9ae-4014-92c5-30ea52bcf445" />
 
+# AWS IAM Best Practices
 
+- Avoid using the root account except for initial account setup.
+- Add users to a group and assign permissions to the group instead of assigning directly to individuals.
+- Use a strong password policy or enable MFA (Multi-Factor Authentication).
+- Use Access Keys for CLI/SDK access instead of passwords.
+- Never share Access Keys or passwords with anyone.
+- Regularly audit permissions using the IAM Credential Report.
 
 
 
