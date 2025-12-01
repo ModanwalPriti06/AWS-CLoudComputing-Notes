@@ -199,8 +199,19 @@ IAM allows integration with external identity providers (such as Active Director
 - MFA is a extra layer of security that require user to provide two or more forms of verification, like a password and a code from their phone, to access the account. (username + password + securitypassword).
 - MFA must be active for root user.
 
-# Ways of accessing AWS 
+# Practical - Create user and group user in IAM dahsboard- 
+https://www.youtube.com/watch?v=N4sJj-SxX00 - 44min
+```
+https://253647676357.signin.aws.amazon.com/console
+```
 
+# Ways of accessing AWS 
+- AWS Management Console (Web UI)
+- AWS CLI (Command Line Interface): with the help of cli we an do automation thing like cron job.
+- AWS SDKs & APIs (for programming languages)
+- AWS CloudFormation / IaC (Infrastructure as Code)
+
+<img width="559" height="601" alt="Screenshot 2025-12-01 at 6 36 24 PM" src="https://github.com/user-attachments/assets/c9d52ff6-b9ae-4014-92c5-30ea52bcf445" />
 
 
 
