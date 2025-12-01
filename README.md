@@ -222,9 +222,27 @@ https://253647676357.signin.aws.amazon.com/console
 - Never share Access Keys or passwords with anyone.
 - Regularly audit permissions using the IAM Credential Report.
 
-# AWS EC2 Service
+# AWS EC2 Service (Elastic Compute Service)
+EC2 is a cloud service that provides resizable virtual server, called instances which you can use to run application. Exam: Buying and managing physical server AWS EC2 lets you rent virtual server inthe cloud. These virtual server called instances.
+- EC2 server region specific hoti hai. Means jo bhi server, machine jis region me create hoga usi region me dikhega.
+- Example: OS, RAM, Memory, Disk Space, CPU core.
 
+### AWS EC2 – Key Configuration Options
 
+- Instance Type: Select the hardware capacity (e.g., CPU, memory).
+- AMI (Amazon Machine Image): Choose the operating system and software (Linux, macOS, Windows).
+- Storage: Configure the type and size of storage (e.g., EBS volume).
+- Security Groups: Set up firewall rules to control inbound/outbound traffic.
+- Key Pair: Create or use an existing key pair for SSH access.
+- Network Settings: Configure VPC, subnet, and assign public or private IP addresses.
+- IAM Role: Attach an IAM role to grant permissions for accessing other AWS resources.
+- User Data: Add scripts that will run automatically when the instance starts.
+- Elastic IP: Optionally associate a static IP address for consistent public access.
+
+## Step follow to create EC2 instance.
+- Goto EC2 dashbaord
+- Click Launched instanced
+- 
 
 
 
