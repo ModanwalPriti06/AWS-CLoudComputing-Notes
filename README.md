@@ -177,23 +177,18 @@ Most popular ones inlcuded **EC2** for scalable compute capacity. **S3** for hig
 - Global Service
 - Root account created by default, shouldn't be used or shared.
 
-#### Create Users
-You can create individual user accounts for people who need access to your AWS resources.
-
-#### Assign Permissions
-You can assign specific permissions to users, groups, or roles to control what actions they can perform on AWS services.
-
-#### Create Groups
-You can group users together and assign permissions to the group, making management easier for multiple users.
-
-#### Create Roles
-You can create roles to assign temporary permissions to AWS services or users. This is especially useful for securely managing permissions across different AWS resources.
-
-#### Define Policies
-You can create and attach custom policies to define fine-grained permissions for controlling access to AWS resources.
-
-#### Manage Federated Access
-IAM allows integration with external identity providers (such as Active Directory) for centralized management of user access across AWS.
+- **Create Users**
+  - You can create individual user accounts for people who need access to your AWS resources.
+- **Assign Permissions**
+  - You can assign specific permissions to users, groups, or roles to control what actions they can perform on AWS services.
+- **Create Groups**
+  - You can group users together and assign permissions to the group, making management easier for multiple users.
+- **Create Roles**
+  - You can create roles to assign temporary permissions to AWS services or users. This is especially useful for securely managing permissions across different AWS resources.
+- **Define Policies**
+  - You can create and attach custom policies to define fine-grained permissions for controlling access to AWS resources.
+- **Manage Federated Access**
+  - IAM allows integration with external identity providers (such as Active Directory) for centralized management of user access across AWS.
 
 ## MFA (Multi Factor Authentication)
 - MFA is a extra layer of security that require user to provide two or more forms of verification, like a password and a code from their phone, to access the account. (username + password + securitypassword).
