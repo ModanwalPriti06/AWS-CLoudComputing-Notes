@@ -250,6 +250,42 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 - Goto EC2 dashboard
 - go into Security
 - see security group and inbound and outbound rules.
+  
+**Important Point about Security group**
+
+- Region specific
+- Only “Allow” rule (there is no “Deny” rule)
+- All inbound traffic is blocked and outbound is allowed by default
+
+**You define rules for specific:**
+- Protocols (like HTTP, HTTPS, SSH, etc.)
+- Port numbers (e.g., port 80 for HTTP, port 22 for SSH)
+- IP addresses or ranges: (e.g., allow traffic only from a specific IP or a range of IPs)
+
+**Important AWS behavior:**
+- If you allow incoming traffic on a specific port (e.g., port 80 for HTTP), then outgoing response traffic is automatically allowed without requiring an explicit outbound rule.
+
+### Some ports you should be aware of:
+
+1. HTTP (Port 80) – Unencrypted web traffic.
+2. HTTPS (Port 443) – Encrypted web traffic (SSL/TLS).
+3. SSH (Port 22) – Secure remote access to servers (Linux/Unix).
+4. FTP (Port 21) – File Transfer Protocol (unsecured).
+5. SFTP (Port 22) – Secure File Transfer Protocol.
+6. SMTP (Port 25) – Simple Mail Transfer Protocol (email sending).
+7. RDP (Port 3389) – Remote Desktop Protocol (Windows remote access).
+8. MySQL (Port 3306) – MySQL database connections.
+9. PostgreSQL (Port 5432) – PostgreSQL database connections.
+10. DNS (Port 53) – Domain Name System (converts domain names to IP addresses).
+
+
+
+
+
+
+
+
+
 
 
 
