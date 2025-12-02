@@ -278,7 +278,46 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 9. PostgreSQL (Port 5432) – PostgreSQL database connections.
 10. DNS (Port 53) – Domain Name System (converts domain names to IP addresses).
 
+# How to SSH into EC2 instance? (Accessing EC2 Instances)
+SSH allow you to connect and control/access a remote machine.
 
+- goto EC2 dashboard
+- goto instance and select created instance
+- click right button connect
+- click again down connect
+- (Now you are able to see new terminal)
+```
+// commond enter one by one
+
+cat /etc/os-release
+free
+df -h
+```
+### SSH EC2 From Mac
+
+>[!Important]
+> Run this command, if necessary, to ensure your key is not publicly viewable: chmod 400 "mywebserver-key.pem"
+
+- open terminal
+- goto section where .pem file is there
+- ls -ltr
+- chmod 400 "mywebserver-key.pem"
+- ssh -i "mywebserver-key.pem" ec2-user@ec2-3-237-40-100.compute-1.amazonaws.com
+
+# EC2 Termination
+- select instances
+- goto instance state
+- Terminate Instance
+
+# EC2 Types Example:
+- Case 1: Small Website or Blog
+  - Suitable Type: t3.micro or t3.small (General Purpose)
+- Case 2: E-Commerce Application
+  - Suitable Type: m5.large or m5.xlarge (General Purpose)
+- Case 3: Real-Time Video Rendering and Streaming (Accelerated Computing)
+  - Instance Type: g5.12xlarge or g5.24xlarge
+- Case 4: In-Memory Database for Real-Time Analytics (Memory Optimized)
+  - Instance Type: r6g.16xlarge or x2idn.32xlarge (Memory Optimized)
 
 
 
