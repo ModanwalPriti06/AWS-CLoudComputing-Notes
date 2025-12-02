@@ -217,6 +217,8 @@ https://253647676357.signin.aws.amazon.com/console
 - Never share Access Keys or passwords with anyone.
 - Regularly audit permissions using the IAM Credential Report.
 
+---
+
 # AWS EC2 Service (Elastic Compute Service)
 
 EC2 is a cloud service that provides resizable virtual server, called instances which you can use to run application. Exam: Buying and managing physical server AWS EC2 lets you rent virtual server inthe cloud. These virtual server called instances.
@@ -322,12 +324,12 @@ df -h
 | **Reserved Instances** | Long-term, steady workloads (1–3 years)                                                | Medium to Low (Up to 75% off) | 1 or 3 years                         | Low                         |
 | **Spot Instances**     | Fault-tolerant, flexible tasks like batch jobs, big data, CI/CD, distributed computing | Very Low (Up to 90% off)      | None (but can be terminated anytime) | Medium (can be interrupted) |
 
+<img width="600" height="325" alt="EC2" src="https://github.com/user-attachments/assets/3d2dfb2c-1a41-4b52-8382-1c93ddac1dca" />
 
-
-
-
-
-
+---
+# AWS EBS (Elastic Block Store)
+- In this topic u will learn how to increase instance storage size, how to add storage, additional disk add linux base instance, how to take backup and how to retrieve, snapshot share one region to another region etc.
+- Jab ham instance create krte to usme option dikhta hai **configure storage** vhi hota hai in the form of EBS.
 
 
 
