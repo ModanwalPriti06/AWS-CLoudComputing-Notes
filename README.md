@@ -314,7 +314,13 @@ df -h
 - Case 4: In-Memory Database for Real-Time Analytics (Memory Optimized)
   - Instance Type: r6g.16xlarge or x2idn.32xlarge (Memory Optimized)
 
+# AWS EC2 Purchasing Options Comparison
 
+| **Purchasing Option**  | **Best For**                                                                           | **Cost**                      | **Commitment**                       | **Flexibility**             |
+| ---------------------- | -------------------------------------------------------------------------------------- | ----------------------------- | ------------------------------------ | --------------------------- |
+| **On-Demand**          | Short-term, unpredictable workloads                                                    | High                          | None                                 | High                        |
+| **Reserved Instances** | Long-term, steady workloads (1–3 years)                                                | Medium to Low (Up to 75% off) | 1 or 3 years                         | Low                         |
+| **Spot Instances**     | Fault-tolerant, flexible tasks like batch jobs, big data, CI/CD, distributed computing | Very Low (Up to 90% off)      | None (but can be terminated anytime) | Medium (can be interrupted) |
 
 
 
