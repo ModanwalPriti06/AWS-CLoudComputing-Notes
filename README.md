@@ -223,12 +223,12 @@ https://253647676357.signin.aws.amazon.com/console
 - Regularly audit permissions using the IAM Credential Report.
 
 # AWS EC2 Service (Elastic Compute Service)
+
 EC2 is a cloud service that provides resizable virtual server, called instances which you can use to run application. Exam: Buying and managing physical server AWS EC2 lets you rent virtual server inthe cloud. These virtual server called instances.
 - EC2 server region specific hoti hai. Means jo bhi server, machine jis region me create hoga usi region me dikhega.
 - Example: OS, RAM, Memory, Disk Space, CPU core.
 
 ### AWS EC2 – Key Configuration Options
-
 - Instance Type: Select the hardware capacity (e.g., CPU, memory).
 - AMI (Amazon Machine Image): Choose the operating system and software (Linux, macOS, Windows).
 - Storage: Configure the type and size of storage (e.g., EBS volume).
@@ -239,13 +239,17 @@ EC2 is a cloud service that provides resizable virtual server, called instances 
 - User Data: Add scripts that will run automatically when the instance starts.
 - Elastic IP: Optionally associate a static IP address for consistent public access.
 
-## Step follow to create EC2 instance.
+### Step follow to create EC2 instance.
 - Goto EC2 dashbaord
 - Click Launched instanced
-- 
 
+### Security Groups:
+Network firewall rules that controls inbound and outbound traffic for instances.
+<img width="873" height="201" alt="Screenshot 2025-12-02 at 1 57 15 PM" src="https://github.com/user-attachments/assets/20a0ea95-ee0b-4ef9-8d08-449d62844e3e" />
 
-
+- Goto EC2 dashboard
+- go into Security
+- see security group and inbound and outbound rules.
 
 
 
