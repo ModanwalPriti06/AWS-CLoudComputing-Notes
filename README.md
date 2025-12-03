@@ -330,6 +330,50 @@ df -h
 # AWS EBS (Elastic Block Store)
 - In this topic u will learn how to increase instance storage size, how to add storage, additional disk add linux base instance, how to take backup and how to retrieve, snapshot share one region to another region etc.
 - Jab ham instance create krte to usme option dikhta hai **configure storage** vhi hota hai in the form of EBS.
+- AWS EBS is a cloud-based storage service that provides durable, high-performance block storage for use with Amazon EC2 instances.
+- It works like a virtual hard drive, allowing you to store and access data even when your EC2 instances are stopped or terminated.
+
+**For example,** if you're hosting a MySQL or PostgreSQL database, you need reliable, high-performance storage to handle frequent read/write operations.
+EBS provides persistent, fast storage that ensures your data is saved even if the EC2 instance is stopped or restarted, making it ideal for database workloads.
+
+### ⭐ Important Points About EBS (Elastic Block Store)
+
+- Region & AZ specific
+- Built-in Redundancy
+  - EBS volumes are automatically replicated within the same AZ.
+  - This prevents data loss due to hardware failures.
+- Different Volume Types
+  - gp2 / gp3, io1 / io2, st1, sc1.
+- Allows Encryption & Snapshots for Backup
+- Scalable
+
+>[!Note]
+> If instance is terminated then volume is also deleted means what the storage of that particular instance got deleted by default. If u don't want to delete storage when instance is deleted then when u are creating instance - storage -> Delete on termination -> select No.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
