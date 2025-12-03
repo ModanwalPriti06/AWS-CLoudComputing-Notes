@@ -361,19 +361,18 @@ EBS provides persistent, fast storage that ensures your data is saved even if th
 5. Click Create volume.
 
 ### Attach Volume to an Instance (Console)
-
 1. In EC2 Console → Volumes, select your new volume.
 2. Click Actions → Attach volume.
 3. Choose the Instance from dropdown and set the Device name (suggested /dev/sdf or /dev/xvdf).
 4. Click Attach.
 
+## Delete and Detach Volumwe
+- Step-1: Go to AWS Console → EC2 → Elastic Block Store → Volumes
+- Step-2: Select the volume you want to detach.
+- Step-3: Click Actions → Detach volume/Delete Volume
+- Step-4: Confirm Detach/Delete
 
-
-
-
-
-
-
+## EBS Snapshot(backup)
 
 
 
