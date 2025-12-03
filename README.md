@@ -351,11 +351,21 @@ EBS provides persistent, fast storage that ensures your data is saved even if th
 > If instance is terminated then volume is also deleted means what the storage of that particular instance got deleted by default. If u don't want to delete storage when instance is deleted then when u are creating instance - storage -> Delete on termination -> select No.
 
 
+## Create and Attach EBS
 
+### Create EBS Volume (Console)
+1. Open AWS Console → EC2 → Elastic Block Store → Volumes.
+2. Click Create volume.
+3. Choose Volume type (gp3, gp2, io1, etc.), Size (GiB), and Availability Zone (pick the AZ of your instance).
+4. Optionally add tags (e.g., Name=MyVolume).
+5. Click Create volume.
 
+### Attach Volume to an Instance (Console)
 
-
-
+1. In EC2 Console → Volumes, select your new volume.
+2. Click Actions → Attach volume.
+3. Choose the Instance from dropdown and set the Device name (suggested /dev/sdf or /dev/xvdf).
+4. Click Attach.
 
 
 
