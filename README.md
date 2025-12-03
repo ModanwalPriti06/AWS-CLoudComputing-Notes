@@ -403,6 +403,10 @@ EBS Lifecycle Manager is an AWS service that automatically creates, retains, and
 
 # AWS AMI(AMazon Machine Image) Service
 An Amazon Machine Image (AMI) is a pre-configured template that provides the necessary information to launch an EC2 instance in AWS.
+
+- With an AMI, you can launch new EC2 instances with a consistent, predefined configuration.
+- You can also create custom AMIs to include specific software or settings, allowing for quick replication of environments.
+  
 **It includes:**
 - Operating system (e.g., Linux, Windows)
 - Application server (e.g., Apache, Nginx)
@@ -422,6 +426,59 @@ An Amazon Machine Image (AMI) is a pre-configured template that provides the nec
 8. Click Create image.
 9. Go to EC2 → AMIs (same region) and wait — status will be pending then available.
 10. When available, you can Launch a new instance from the AMI (Actions → Launch) or Share/Copy it to another region.
+
+## Types of AMI
+| **Type of AMI**                  | **Description**                                                                                                                   |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Public AMIs**                  | Available to all AWS users. Useful for basic use cases like popular operating systems (e.g., Ubuntu, CentOS).                     |
+| **Private AMIs**                 | Created by a user and only available within that account or shared with specific accounts.                                        |
+| **Paid AMIs / Marketplace AMIs** | Provided by third parties through AWS Marketplace, offering software like databases, web servers, or pre-configured environments. |
+
+### Use Case of Paid AMIs Benefits:
+- 🔹 Rapid Deployment:
+  - The LAMP stack is pre-configured, eliminating the need to manually install and configure Apache, MySQL, and PHP.
+- 🔹 Scalability and Load Balancing:
+  - Running on AWS enables quick scaling to match website traffic, while Elastic Load Balancer helps distribute requests efficiently.
+- 🔹 Cost Efficiency:
+  - You only pay for the infrastructure and the software according to your usage.
+
+### Key Differences: Launch Template vs AMI
+| **Feature**     | **Create Launch Template**                                                        | **Create Image (AMI)**                                         |
+| --------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **Purpose**     | Create a reusable blueprint for launching instances                               | Create a custom AMI snapshot of an instance                    |
+| **Content**     | Contains configuration settings (e.g., AMI, instance type, security groups, etc.) | Captures OS, applications, configurations, and data            |
+| **Reusability** | Used repeatedly to launch new instances in a consistent way                       | Used to create new instances that replicate the captured image |
+| **Use Cases**   | Auto Scaling, Spot Instances, Standardizing instance settings                     | Backup, Replication, Migrating instances to another region     |
+| **Versioning**  | Can have multiple versions for different configurations                           | Typically, an AMI is a point-in-time capture of an instance    |
+
+### EC2 Image Builder
+It is pipeline of Building, testing and deployment and it's free of cost.
+
+<img width="753" height="408" alt="Screenshot 2025-12-03 at 11 47 07 PM" src="https://github.com/user-attachments/assets/e55d824f-5084-449d-89aa-cc1d1c8360d4" />
+
+**Usr Cases:**
+- Automated Build and maintenance of images.
+- Imcrease image quality.
+- Manage image compliance for your industry standard.
+
+---
+# ELB (Elastic Load Balancing)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
