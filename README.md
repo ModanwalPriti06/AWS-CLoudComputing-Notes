@@ -385,13 +385,16 @@ EBS provides persistent, fast storage that ensures your data is saved even if th
 6. Go to EC2 → Snapshots (you will see a snapshot with status pending → completed.)
 
 ## EBS Lifecycle Manager
+EBS Lifecycle Manager is an AWS service that automatically creates, retains, and deletes EBS snapshots based on rules you define.
 
+- Automate backups
+- Reduce manual snapshot management
+- Save storage costs
+- Maintain compliance by keeping backups for the right amount of time
 
-
-
-
-
-
+>[!Important]
+> Db ka database ka monthly yearly weekly backup automatically lega.
+  EBS -> Lifecycle Manager
 
 
 
