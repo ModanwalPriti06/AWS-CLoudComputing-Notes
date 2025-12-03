@@ -396,7 +396,32 @@ EBS Lifecycle Manager is an AWS service that automatically creates, retains, and
 > Db ka database ka monthly yearly weekly backup automatically lega.
   EBS -> Lifecycle Manager
 
+>[!Note]
+> Agar Snapshot delete kr dete hai to recycle bin ka optin rhata hai apko thoda billing krke wha se rollback kr skate hai apne resources ko.
 
+---
+
+# AWS AMI(AMazon Machine Image) Service
+An Amazon Machine Image (AMI) is a pre-configured template that provides the necessary information to launch an EC2 instance in AWS.
+**It includes:**
+- Operating system (e.g., Linux, Windows)
+- Application server (e.g., Apache, Nginx)
+- Pre-installed software and configurations
+
+>[!Note]
+> You will see how to deploy website application in production. for static website.
+
+### Console (GUI) — quick steps
+1. Open AWS Console → EC2 → Instances.
+2. Select the Windows instance you want to image.
+3. Click Actions → Image and templates → Create image.
+4. Fill Image name and optional Description.
+5. (Optional) Review Instance volumes — add or remove volumes to include in the AMI.
+6. Choose whether to No reboot the instance (unchecked = AWS will reboot the instance to ensure file-system consistency; for Windows leaving reboot enabled is recommended).
+7. (Optional) Add tags for the new AMI (e.g., Name=MyWindowsAMI).
+8. Click Create image.
+9. Go to EC2 → AMIs (same region) and wait — status will be pending then available.
+10. When available, you can Launch a new instance from the AMI (Actions → Launch) or Share/Copy it to another region.
 
 
 
