@@ -1,4 +1,8 @@
 # AWS (Amazon Web Service)
+- https://www.youtube.com/watch?v=-nCUSqugkRs&list=PLSJds3dF41Kzm6kANLxowm5dECkEbM8lr
+- 
+
+  
 # Prerequisites (Before Learning AWS)
 - ✅ Basic Linux Commands (for EC2)
 - ✅ Networking Basics (IP, DNS, Firewall, Ports)
