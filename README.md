@@ -1,7 +1,7 @@
 # AWS (Amazon Web Service)
 - https://www.youtube.com/watch?v=-nCUSqugkRs&list=PLSJds3dF41Kzm6kANLxowm5dECkEbM8lr
 - https://www.youtube.com/watch?v=XGcoeEyt2UM&list=PLEiEAq2VkUULlNtIFhEQHo8gacvme35rz&index=10
-- https://www.youtube.com/watch?v=VLjlle_8bwE&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=3
+- This youtube Repo - https://www.youtube.com/watch?v=Ens8asZLomk&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=6
 
   
 # Prerequisites (Before Learning AWS)
