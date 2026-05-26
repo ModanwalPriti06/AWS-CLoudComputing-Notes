@@ -208,7 +208,9 @@ https://253647676357.signin.aws.amazon.com/console
 - Create User and add user in group from IAM services
 - install aws in macOs - brew install awscli
 - check aws cli install or not with enter command: aws
-- You can see some aws message 
+- You can see some aws message
+<img width="680" height="350" alt="Screenshot 2026-05-26 at 7 43 02 AM" src="https://github.com/user-attachments/assets/6678b4d9-8989-4948-9940-1e44aca1b9a8" />
+
 
 ## Ways of accessing AWS 
 - AWS Management Console (Web UI)
