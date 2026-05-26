@@ -205,6 +205,11 @@ https://www.youtube.com/watch?v=N4sJj-SxX00 - 44min
 https://253647676357.signin.aws.amazon.com/console
 ```
 
+- Create User and add user in group from IAM services
+- install aws in macOs - brew install awscli
+- check aws cli install or not with enter command: aws
+- You can see some aws message 
+
 ## Ways of accessing AWS 
 - AWS Management Console (Web UI)
 - AWS CLI (Command Line Interface): with the help of cli we an do automation thing like cron job.
