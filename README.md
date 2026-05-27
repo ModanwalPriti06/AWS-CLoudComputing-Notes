@@ -343,7 +343,7 @@ df -h
   - Suitable Type: t3.micro or t3.small (General Purpose)
 - Case 2: E-Commerce Application
   - Suitable Type: m5.large or m5.xlarge (General Purpose)
-- Case 3: Real-Time Video Rendering and Streaming (Accelerated Computing)
+- Case 3: Real-Time Video Rendering and Streaming (Accelerated Computing: NVIDIA)
   - Instance Type: g5.12xlarge or g5.24xlarge
 - Case 4: In-Memory Database for Real-Time Analytics (Memory Optimized)
   - Instance Type: r6g.16xlarge or x2idn.32xlarge (Memory Optimized)
@@ -359,7 +359,7 @@ df -h
 <img width="600" height="325" alt="EC2" src="https://github.com/user-attachments/assets/3d2dfb2c-1a41-4b52-8382-1c93ddac1dca" />
 
 ---
-# AWS EBS (Elastic Block Store)
+# AWS EBS (Elastic Block Store) Resizing and backup storage
 - In this topic u will learn how to increase instance storage size, how to add storage, additional disk add linux base instance, how to take backup and how to retrieve, snapshot share one region to another region etc.
 - Jab ham instance create krte to usme option dikhta hai **configure storage** vhi hota hai in the form of EBS.
 - AWS EBS is a cloud-based storage service that provides durable, high-performance block storage for use with Amazon EC2 instances.
@@ -394,6 +394,7 @@ EBS provides persistent, fast storage that ensures your data is saved even if th
 2. Click Actions → Attach volume.
 3. Choose the Instance from dropdown and set the Device name (suggested /dev/sdf or /dev/xvdf).
 4. Click Attach.
+5. How to check that volume got attached or not : goto running instances > storage > scroll and you will see EBS (block storage)
 
 ## Delete and Detach Volumwe
 - Step-1: Go to AWS Console → EC2 → Elastic Block Store → Volumes
