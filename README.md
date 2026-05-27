@@ -269,7 +269,10 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 - Goto EC2 dashboard
 - go into Security
 - see security group and inbound(request coming from outside on your server) and outbound rules.
-  
+
+>[!Important]
+>Firewall related issue if you are getting means u have to check your security group.
+
 ### Important Point about Security group
 - Region specific
 - Only “Allow” rule (there is no “Deny” rule)
@@ -297,7 +300,7 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 9. PostgreSQL (Port 5432) – PostgreSQL database connections.
 10. DNS (Port 53) – Domain Name System (converts domain names to IP addresses).
 
-# How to SSH into EC2 instance? (Accessing EC2 Instances)
+# How to SSH into EC2 instance? (Accessing EC2 Instances in remote machine)
 SSH allow you to connect and control/access a remote machine.
 
 - goto EC2 dashboard
@@ -312,7 +315,11 @@ cat /etc/os-release
 free
 df -h
 ```
-### SSH EC2 From Mac
+
+>[!Notes]
+>putty is free ssh tool : (https://www.youtube.com/watch?v=Ens8asZLomk&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=6 (started from 24 min))
+
+## SSH EC2 From Mac
 
 >[!Important]
 > Run this command, if necessary, to ensure your key is not publicly viewable: chmod 400 "mywebserver-key.pem"
