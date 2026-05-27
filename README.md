@@ -252,6 +252,9 @@ EC2 is a cloud service that provides resizable virtual server, called instances 
 - Goto EC2 dashbaord
 - Click Launched instanced
 
+>[!Important]
+>EC2 Instances based on region means in which region u will make instance u can get that specific region only.
+
 ### Security Groups:
 Network firewall rules that controls inbound and outbound traffic for instances.
 <img width="873" height="201" alt="Screenshot 2025-12-02 at 1 57 15 PM" src="https://github.com/user-attachments/assets/20a0ea95-ee0b-4ef9-8d08-449d62844e3e" />
