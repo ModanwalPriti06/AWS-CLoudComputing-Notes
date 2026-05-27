@@ -396,15 +396,21 @@ EBS provides persistent, fast storage that ensures your data is saved even if th
 4. Click Attach.
 5. How to check that volume got attached or not : goto running instances > storage > scroll and you will see EBS (block storage)
 
+## Modify size EBS volumne
+- select instances
+- goto action above
+- modify volume based on req
+- click modify button
+
 ## Delete and Detach Volumwe
 - Step-1: Go to AWS Console → EC2 → Elastic Block Store → Volumes
 - Step-2: Select the volume you want to detach.
 - Step-3: Click Actions → Detach volume/Delete Volume
 - Step-4: Confirm Detach/Delete
 
-## EBS Snapshot(backup)
-- ✔ Go to EC2 → Volumes
-- ✔ Select Volume → Create Snapshot
+## EBS Snapshot(backup of storage) 
+- ✔ Sidebar Go to EC2 → Volumes
+- ✔ Select Volume → Create Snapshot (take care after creating snapshot status completed)
 - ✔ Monitor in Snapshots section
 - ✔ Optional: copy to another region
 - ✔ Optional: schedule automatic backups
