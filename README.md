@@ -275,12 +275,11 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 - Only “Allow” rule (there is no “Deny” rule)
 - All inbound traffic is blocked and outbound is allowed by default
 
-**You define rules for specific:**
-- Protocols (like HTTP, HTTPS, SSH, etc.)
-- Port numbers (e.g., port 80 for HTTP, port 22 for SSH)
-- IP addresses or ranges: (e.g., allow traffic only from a specific IP or a range of IPs)
+- You define rules for specific:**
+  - Protocols (like HTTP, HTTPS, SSH, etc.)
+  - Port numbers (e.g., port 80 for HTTP, port 22 for SSH)
+  - IP addresses or ranges: (e.g., allow traffic only from a specific IP or a range of IPs)
 
-**Important AWS behavior:**
 - If you allow incoming traffic on a specific port (e.g., port 80 for HTTP), then outgoing response traffic is automatically allowed without requiring an explicit outbound rule.
 
 ### Some ports you should be aware of:
