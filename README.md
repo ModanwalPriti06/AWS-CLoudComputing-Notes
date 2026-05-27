@@ -480,8 +480,11 @@ An Amazon Machine Image (AMI) is a pre-configured template that provides the nec
   - Running on AWS enables quick scaling to match website traffic, while Elastic Load Balancer helps distribute requests efficiently.
 - 🔹 Cost Efficiency:
   - You only pay for the infrastructure and the software according to your usage.
+ 
+## Why creating template instance?
+Instead of creating multiple instance again and again with same specification we can create templete instance so we can save our time.
 
-### Key Differences: Launch Template vs AMI
+### Key Differences: Create Launch Template vs Create Images (AMI)
 | **Feature**     | **Create Launch Template**                                                        | **Create Image (AMI)**                                         |
 | --------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------- |
 | **Purpose**     | Create a reusable blueprint for launching instances                               | Create a custom AMI snapshot of an instance                    |
@@ -489,6 +492,11 @@ An Amazon Machine Image (AMI) is a pre-configured template that provides the nec
 | **Reusability** | Used repeatedly to launch new instances in a consistent way                       | Used to create new instances that replicate the captured image |
 | **Use Cases**   | Auto Scaling, Spot Instances, Standardizing instance settings                     | Backup, Replication, Migrating instances to another region     |
 | **Versioning**  | Can have multiple versions for different configurations                           | Typically, an AMI is a point-in-time capture of an instance    |
+
+>[!Important]
+> Summary: Yes, all installed applications, configuration settings, environment variables, network configurations, DNS settings, users, and firewall settings will be included in the AMI.
+An AMI is essentially a complete snapshot of the instance at the point in time you created the image, allowing you to replicate the exact state of that server, including all software, configuration, and operating system-level changes.
+When you create an EC2 instance from this AMI, it will boot up as if it were an exact clone of the original, with all installed software and settings intact.
 
 ### EC2 Image Builder
 It is pipeline of Building, testing and deployment and it's free of cost.
@@ -501,7 +509,7 @@ It is pipeline of Building, testing and deployment and it's free of cost.
 - Manage image compliance for your industry standard.
 
 ---
-# ELB (Elastic Load Balancing)
+# ELB(Elastic Load Balancing) & ASG(Auto Scaling Group)
 
 
 
