@@ -251,20 +251,26 @@ EC2 is a cloud service that provides resizable virtual server, called instances 
 ### Step follow to create EC2 instance.
 - Goto EC2 dashbaord
 - Click Launched instanced
+- Give instance name
+- Application and os image select based on requirement for OS
+- instances type - check cpu and memory capacity
+- key pair login - create key pair (u will get one file will be downloaded in your sys)
+- Network setting- which services u want to allow u have to handle in this section.
+- configure storage
+- click on launch instances finally your instance had created.
 
 >[!Important]
 >EC2 Instances based on region means in which region u will make instance u can get that specific region only.
 
-### Security Groups:
-Network firewall rules that controls inbound and outbound traffic for instances.
+## Security Groups:
+Network firewall rules that controls inbound and outbound traffic for instances. Because of Security group u allow that on your instance which services u wanna to run or not u can handle via security group.
 <img width="873" height="201" alt="Screenshot 2025-12-02 at 1 57 15 PM" src="https://github.com/user-attachments/assets/20a0ea95-ee0b-4ef9-8d08-449d62844e3e" />
 
 - Goto EC2 dashboard
 - go into Security
-- see security group and inbound and outbound rules.
+- see security group and inbound(request coming from outside on your server) and outbound rules.
   
-**Important Point about Security group**
-
+### Important Point about Security group
 - Region specific
 - Only “Allow” rule (there is no “Deny” rule)
 - All inbound traffic is blocked and outbound is allowed by default
