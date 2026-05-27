@@ -282,6 +282,8 @@ Network firewall rules that controls inbound and outbound traffic for instances.
 
 - If you allow incoming traffic on a specific port (e.g., port 80 for HTTP), then outgoing response traffic is automatically allowed without requiring an explicit outbound rule.
 
+- Ypu can create your security group also: left sidebar > Network & Security > Security Groups
+
 ### Some ports you should be aware of:
 
 1. HTTP (Port 80) – Unencrypted web traffic.
