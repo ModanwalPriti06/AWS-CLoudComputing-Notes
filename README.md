@@ -319,7 +319,7 @@ df -h
 >[!Note]
 >putty is free ssh tool : (https://www.youtube.com/watch?v=Ens8asZLomk&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=6 (started from 24 min))
 
-## SSH EC2 From Mac
+## Access SSH EC2 From Mac
 
 >[!Important]
 > Run this command, if necessary, to ensure your key is not publicly viewable: chmod 400 "mywebserver-key.pem"
@@ -330,10 +330,13 @@ df -h
 - chmod 400 "mywebserver-key.pem"
 - ssh -i "mywebserver-key.pem" ec2-user@ec2-3-237-40-100.compute-1.amazonaws.com
 
-# EC2 Termination
-- select instances
-- goto instance state
-- Terminate Instance
+# EC2 Termination 
+- select instances checkbox
+- goto instance state above section
+- Terminate (delete) Instance
+
+>[!Important]
+>Checking billing or cost: Go to searchbar and search billing > Billing and Cost Management > See cost summary.
 
 # EC2 Types Example:
 - Case 1: Small Website or Blog
