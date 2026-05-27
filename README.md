@@ -316,7 +316,7 @@ free
 df -h
 ```
 
->[!Notes]
+>[!Note]
 >putty is free ssh tool : (https://www.youtube.com/watch?v=Ens8asZLomk&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=6 (started from 24 min))
 
 ## SSH EC2 From Mac
