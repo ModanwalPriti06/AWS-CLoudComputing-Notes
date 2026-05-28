@@ -511,6 +511,53 @@ It is pipeline of Building, testing and deployment and it's free of cost.
 ---
 # ELB(Elastic Load Balancing) & ASG(Auto Scaling Group)
 
+## Scalability: Scalability means the ability to grow your system resources when your application or website get heavy/ more traffic or more users.
+
+#### Vertical Scalability (Scaling Up)
+- Vertical Scalability means adding more power (CPU, RAM) to your existing server.
+- Ex: t2.micro to m5.large
+
+#### Horizontal Scalability (Scaling Out)
+- Horizontal Scalability means adding more instances (servers) to distribute the load.
+- You can add more EC2 instances behind a load balancer.
+
+## High Availability(HA):
+HA means keeping your services up and running with minimal downtime, so it's always accessible for users.
+Ex: running resource in multiple AZs.
+
+## Elasiticity
+Elasiticity means the ability to automatically adjust resources as the demand changes- adding more when needed and removing when it's no longer neccessary. EX: ASG (Auto Scaling Growth)
+
+
+## Load Balancing:
+Load Balancing is the process of distributing incoming network traffic or user requests across multiple servers (instances) so that no single server gets overloaded.
+- In Amazon Web Services, a Load Balancer sits between users and your EC2 servers.
+
+```
+Example:
+10,000 users visit your website.
+You have 3 EC2 instances.
+
+A Load Balancer will distribute traffic like this:
+
+Server 1 → 3,300 requests
+Server 2 → 3,300 requests
+Server 3 → 3,400 requests
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
