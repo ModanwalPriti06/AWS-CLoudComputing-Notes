@@ -102,7 +102,9 @@ Each VM runs independently and does not affect the host OS or other VMs.
 
 1. Type1 (Bare Metal) - Is type ke hypervisor direct h/w par install hote hai. No any Host machine. (Used by cloud provider and enterprise servers)
 2. Type2 (hosted) - Hostel Hypervisor because your virtual machine hosted on your real machine (Host OS)
-   
+
+---
+
 # What is Cloud Computing?
 - Cloud computing is the delivery of on-demand computing services over the internet on a pay-as-you-go basis.
 - Cloud computing means storing and accessing data, applications, and services over the internet instead of your computer’s hard drive.
@@ -156,6 +158,8 @@ Each VM runs independently and does not affect the host OS or other VMs.
 - Virtual Private Cloud
 - CDN
 
+---
+
 # AWS (Amazon Web Service)
 - AWS (Amazon Web Services) is a platform provided by Amazon that offers cloud services — like storage, servers, databases, security, and more — over the internet.
 - 👉 Instead of buying your own computers or servers, you rent them from AWS and pay only for what you use.
@@ -167,7 +171,6 @@ Each VM runs independently and does not affect the host OS or other VMs.
 <img width="1437" height="500" alt="Screenshot 2025-04-27 at 5 52 05 PM" src="https://github.com/user-attachments/assets/c6cf8bf2-fae9-443d-a204-9db485212ef2" />
 <img width="879" alt="Screenshot 2025-04-27 at 11 19 05 PM" src="https://github.com/user-attachments/assets/8b8c0d7f-730f-44d9-8b54-6880021ea2e2" />
 
-
 ### What make AWS so special?
 Scalabilit, Global Reach, Reliability, Security.
 
@@ -176,6 +179,8 @@ Most popular ones inlcuded **EC2** for scalable compute capacity. **S3** for hig
 
 >[!Important]
 >AWS Prasent Market (As per CRN report): Cloud Market Share Q2 2024| AWS: 32%| Microsoft: 23%| Google Cloud:12%
+
+---
 
 # IAM: 
 - Free Service: IAM is offered at no additional cost
@@ -210,7 +215,6 @@ https://253647676357.signin.aws.amazon.com/console
 - check aws cli install or not with enter command: aws
 - You can see some aws message
 <img width="680" height="350" alt="Screenshot 2026-05-26 at 7 43 02 AM" src="https://github.com/user-attachments/assets/6678b4d9-8989-4948-9940-1e44aca1b9a8" />
-
 
 ## Ways of accessing AWS 
 - AWS Management Console (Web UI)
@@ -359,6 +363,7 @@ df -h
 <img width="600" height="325" alt="EC2" src="https://github.com/user-attachments/assets/3d2dfb2c-1a41-4b52-8382-1c93ddac1dca" />
 
 ---
+
 # AWS EBS (Elastic Block Store) Resizing and backup storage
 - In this topic u will learn how to increase instance storage size, how to add storage, additional disk add linux base instance, how to take backup and how to retrieve, snapshot share one region to another region etc.
 - Jab ham instance create krte to usme option dikhta hai **configure storage** vhi hota hai in the form of EBS.
@@ -509,6 +514,7 @@ It is pipeline of Building, testing and deployment and it's free of cost.
 - Manage image compliance for your industry standard.
 
 ---
+
 # ELB(Elastic Load Balancing) & ASG(Auto Scaling Group)
 
 ## Scalability: Scalability means the ability to grow your system resources when your application or website get heavy/ more traffic or more users.
@@ -528,7 +534,6 @@ Ex: running resource in multiple AZs.
 ## Elasiticity
 Elasiticity means the ability to automatically adjust resources as the demand changes- adding more when needed and removing when it's no longer neccessary. EX: ASG (Auto Scaling Growth)
 
-
 ## Load Balancing:
 Load Balancing is the process of distributing incoming network traffic or user requests across multiple servers (instances) so that no single server gets overloaded.
 - In Amazon Web Services, a Load Balancer sits between users and your EC2 servers.
@@ -544,31 +549,65 @@ Server 1 → 3,300 requests
 Server 2 → 3,300 requests
 Server 3 → 3,400 requests
 ```
+In this image u are able to see load balancer has created now and in **resource & map** section able to see flow how it's working.
+<img width="1045" height="526" alt="Screenshot 2026-05-29 at 7 07 25 AM" src="https://github.com/user-attachments/assets/92b61a7f-8f30-4d3b-b78d-29d7aa04586d" />
 
+In Image showing both load balancer healthy means both instances are running if they are showing unhealthy means then that instance are stop and your request will not hit that instances.
 
+### Important Point ELB
 
+- Distributes Traffic: It splits incoming traffic across multiple servers so no single server gets overloaded.
+- Improves Availability: If one server goes down, the load balancer automatically sends traffic to the working servers, ensuring your application stays available.
+- Scales Resources: It helps manage high demand by adding more servers during peak times and distributing the load.
+- Single point of Access need to be expose.
+- HA across AZs
 
+## AWS offers different types of load balancers depending on your needs.
 
+1. Application Load Balancer (ALB) is perfect for web applications, handling complex HTTP and HTTPS requests (Layer 7).
+2. Network Load Balancer (NLB) is designed for high-performance and low latency, perfect for TCP/UDP traffic (ex: gaming, financial apps) (Layer 4).
+3. Gateway Load Balancer (GWLB) helps deploy, scale, and manage third-party virtual appliances, such as firewalls and monitoring solutions.
+<img width="852" height="473" alt="Screenshot 2026-05-29 at 7 15 28 AM" src="https://github.com/user-attachments/assets/71eb6cc6-3ddf-407c-8f6f-7acc9201d6c5" />
 
+## How to create ELB
+1. Set Up EC2 Instances: Create two or more EC2 instances, install a web server, and tag them for easy identification.
+2. Configure Security Groups: Set up a security group allowing HTTP and SSH access.
+3. Create the Load Balancer: Use the EC2 dashboard to create an Application Load Balancer and set it as internet-facing.
+4. Register Targets: Add EC2 instances to the target group and configure health checks.
+5. Test the Load Balancer: Access the DNS name of the load balancer and observe load balancing in action.
+6. Explain to Students: Highlight key concepts like traffic distribution, high availability, and scalability.
 
+---
 
+ # ASG(Auto Scaling Group)
 
+AWS ASG (Auto Scaling Group) is a service that automatically adds or removes EC2 instances based on demand to ensure your application is always available. **It's only managing the number of instances group**
+- It helps scale up when more capacity is needed and scale down during low usage to save costs, keeping the right number of servers running at all times. 
 
+##  Functions
+ - Automatic Scaling: Scale the number of EC2 instances up or down based on demand.
+ - Maintain Instance Health: Replace unhealthy instances automatically to ensure reliability.
+ - Use Scaling Policies: Set rules for scaling based on metrics like CPU usage or request count.
+ - Ensure Availability: Always keep a defined number of instances running to meet application needs.
+ - Schedule Scaling: Pre-configure scaling activities for specific times (e.g., traffic peaks).
+ - Distribute Instances: Deploy instances across multiple Availability Zones for high availability.
+ - Integrate with ELB: Attach instances to an Elastic Load Balancer to automatically balance traffic.
+ - Optimize Costs: Scale down during low demand to save on infrastructure costs.
 
+<img width="356" height="232" alt="Screenshot 2026-05-29 at 7 24 04 AM" src="https://github.com/user-attachments/assets/bbabfddb-ad6b-4824-a954-cb421d984246" />
 
+## Steps to Create ASG
+1. Launch Template or Configuration
+2. Create Auto Scaling Group
+3. Select VPC and Subnets
+4. Attach Load Balancer (Optional)
+5. Configure Scaling Policies
+6. Health Checks
+7. Add Notifications (Optional)
+8. Review and Create
 
-
-
-
-
-
-
-
-
-
-
-
-
+>[!Imprtant]
+>ASG create krne k lie hme AMI aur Launch template dono ki need hogi because jab autoscaling jab hoga new instance use kre to us new instance par hmari website host bhi to honi chahiye so can handle request and all.
 
 
 
