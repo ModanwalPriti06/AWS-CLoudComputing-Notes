@@ -618,12 +618,36 @@ AWS ASG (Auto Scaling Group) is a service that automatically adds or removes EC2
 >[!Note]
 >jab bhi app ASG me max instance define krte like 3 so if u will go in load balancer section and check Resources and map then u will be able to see extra instance why so, because whenever u are creating ASG, so before creating ASG whatever u are creating EC2 instances that instances they are not managing they will do from scratch. (existing instance not considering for auto scaling group) After creating if u are only learning then remove ASG, instance and load balancing other wise u have to pay.
 
-<img width="825" height="354" alt="Screenshot 2026-05-29 at 7 56 04 AM" src="https://github.com/user-attachments/assets/0080fecd-4960-46af-91d2-10ce54cbf621" />
+<img width="825" height="254" alt="Screenshot 2026-05-29 at 7 56 04 AM" src="https://github.com/user-attachments/assets/0080fecd-4960-46af-91d2-10ce54cbf621" />
 
 ---
-# AWS S3 (Simple Storage Service)
+# AWS S3 (Simple Storage Service) 
+## Cover Topic
+- S3 Versioning
+- S3 Replication
+- Data Encryption
+- S3 Bucket Policies
+- S3 Storage Classes
+- Logging Monitoring
+- Hosting Static Website
+- Snow Family
+- Storage Gateways (Hybrid solution)
+  
+- Store and retrieve anytype of data from anywhere and u can store unlimited data and based on data have to pay.
+- AWS S3 (Simple Storage Service) is a cloud-based storage service that allows you to store, manage, and retrieve large amounts of data like files, images, videos, and backups securely and at scale.
+- It provides highly reliable, scalable object storage, making your data accessible from anywhere, anytime, via the internet.
 
+## Key Points
+- Store data as objects
+- Globally unique name
+- Region specific
+- Each object within a bucket is stored as a key-value pair
+  - key is the object's name (which can contain slashes /, mimicking directory structure)
+  - value is the content of the object (the file/data itself).
+- Maximum Object Size: 5 TB (Terabytes) is the maximum size for a single object in Amazon S3.
+- Multipart upload is recommended for objects larger than 5 GB (split the file into smaller parts and upload them separately).
 
+## Host Static Website
 
 
 
