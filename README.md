@@ -615,10 +615,10 @@ AWS ASG (Auto Scaling Group) is a service that automatically adds or removes EC2
 >[!Important]
 >ASG create krne k lie hme AMI aur Launch template dono ki need hogi because jab autoscaling jab hoga new instance use kre to us new instance par hmari website host bhi to honi chahiye so can handle request and all.
 
->[!Notes]
+>[!Note]
 >jab bhi app ASG me max instance define krte like 3 so if u will go in load balancer section and check Resources and map then u will be able to see extra instance why so, because whenever u are creating ASG, so before creating ASG whatever u are creating EC2 instances that instances they are not managing they will do from scratch. (existing instance not considering for auto scaling group) After creating if u are only learning then remove ASG, instance and load balancing other wise u have to pay.
 
-<img width="1325" height="454" alt="Screenshot 2026-05-29 at 7 56 04 AM" src="https://github.com/user-attachments/assets/0080fecd-4960-46af-91d2-10ce54cbf621" />
+<img width="825" height="354" alt="Screenshot 2026-05-29 at 7 56 04 AM" src="https://github.com/user-attachments/assets/0080fecd-4960-46af-91d2-10ce54cbf621" />
 
 ---
 # AWS S3 (Simple Storage Service)
