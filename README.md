@@ -707,11 +707,43 @@ Hosting any static website, In S3 give u one feature that u can use your file as
 | S3 Outposts             | Local/On-Premises | Milliseconds     | Depends on Outposts setup | Infrastructure-dependent |
 
 
+## S3 Bucket Lifecycle
 
+- S3 Lifecycle is a feature that automatically manages objects in an S3 bucket by transitioning them to cheaper storage classes or deleting them after a specified period, helping reduce storage costs and automate data retention policies.
+- You can use lifecycle policies to control the movement of objects b/w different storage classes or delete them entirely, based on specific condition like age or inactivity.
 
+**Real-Life Example:**
+Imagine you have a cupboard where you keep documents:
+- New documents stay on your desk for 30 days.
+- After 30 days, you move them to a cheaper storage room.
+- After 1 year, you throw them away.
+  
+S3 Lifecycle does the same thing for files stored in an S3 bucket.
 
+### Why Use Lifecycle Rules?
+- ✅ Save storage costs
+- ✅ Automatically clean up old files
+- ✅ Move rarely-used files to cheaper storage classes
+- ✅ No need to manually delete old data
 
+## S3 Snow family
+- The S3 Snow Family is a group of physical devices offered by AWS to help move large amounts of data to the cloud when using the internet isn't practical.
+- These devices are used when there's too much data to upload over a regular connection or when dealing with remote areas without reliable internet access.
 
+### Snow Family Devices
+
+| Device             | Description                                                                       | Use Case                                       |
+| ------------------ | --------------------------------------------------------------------------------- | ---------------------------------------------- |
+| **AWS Snowcone**   | A small, portable device for a few terabytes of data                              | Small-scale data transfer and edge computing   |
+| **AWS Snowball**   | A larger device capable of moving petabytes of data and supporting edge computing | Large-scale data migration and processing      |
+| **AWS Snowmobile** | A truck-sized container designed for exabyte-scale data transfers                 | Moving entire data centers or massive datasets |
+
+### Benefits
+- Transfers data quickly and securely to AWS.
+- Useful when internet bandwidth is limited.
+- Supports large-scale migrations.
+- Cost-effective for moving massive datasets.
+- Suitable for remote and disconnected environments.
 
 
 
