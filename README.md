@@ -649,6 +649,40 @@ AWS ASG (Auto Scaling Group) is a service that automatically adds or removes EC2
 
 ## Host Static Website
 
+Hosting any static website, In S3 give u one feature that u can use your file as a website and give u one endpoint too use and check the website publically but before this u have to give u permission for access the file and enable/disable the some point. Giving permission u can use S3 bucket policy, means with the help of s3 bucket policy u can give permission to access website.
+
+## S3 Bucket Policies
+
+- JSON-based access control policies that you attach directly to an S3 bucket to manage permissions for accessing the bucket and its objects.
+- They allow you to define who can access the data and what actions they can perform, such as read, write, or delete, enabling fine-grained control over the security of your data stored in S3.
+
+- Write or paste your JSON policy in the Bucket Policy editor.
+- You can use AWS’s Policy Generator to create a custom policy, or you can manually write the policy in JSON format.
+  - GetObject: Used to retrieve or download files from an S3 bucket.
+  - PutObject: Used to upload or add files into an S3 bucket.
+
+
+## S3 Versioning
+
+S3 bucket me versioning enable krne se, Ham koi bhi file upload krte hai to us file ka version bhi show hota hai so we can figure out ki new file hai, below image me we can see verion Id.
+
+<img width="678" height="275" alt="Screenshot 2026-05-30 at 1 40 18 PM" src="https://github.com/user-attachments/assets/66aa4e1b-8c14-48cd-85df-ea4839e22478" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
