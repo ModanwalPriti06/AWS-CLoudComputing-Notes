@@ -730,6 +730,10 @@ S3 Lifecycle does the same thing for files stored in an S3 bucket.
 - The S3 Snow Family is a group of physical devices offered by AWS to help move large amounts of data to the cloud when using the internet isn't practical.
 - These devices are used when there's too much data to upload over a regular connection or when dealing with remote areas without reliable internet access.
 
+>[!Note]
+>Suppose ap s3 bucket me bahut sara data store kie ho ab apko vo data move karna hai apne aws se so u can do with the help of snow family. uske ek portable device(hardware) me vo data manga skte ho.
+  
+
 ### Snow Family Devices
 
 | Device             | Description                                                                       | Use Case                                       |
@@ -744,6 +748,29 @@ S3 Lifecycle does the same thing for files stored in an S3 bucket.
 - Supports large-scale migrations.
 - Cost-effective for moving massive datasets.
 - Suitable for remote and disconnected environments.
+
+## Amazon S3 Storage Gateway
+It's hybrod cloud storage service that connects on-premises environments to cloud storage in Amazon S3. It helps to extend your local storage to the cloud by acting as a bridge.
+<img width="757" height="343" alt="Screenshot 2026-05-30 at 2 20 22 PM" src="https://github.com/user-attachments/assets/19b1d4ad-b71a-4b83-ae5e-a37339b7f958" />
+
+### Gateway Type
+
+| Gateway Type       | Description                                                                  | Storage Protocol           |
+| ------------------ | ---------------------------------------------------------------------------- | -------------------------- |
+| **File Gateway**   | Stores files in Amazon S3 and provides access using standard file protocols. | NFS, SMB                   |
+| **Volume Gateway** | Presents cloud-backed storage volumes as iSCSI block devices.                | iSCSI                      |
+| **Tape Gateway**   | Replaces physical tape libraries with virtual tapes stored in AWS.           | Virtual Tape Library (VTL) |
+
+
+
+
+
+
+
+
+
+
+
 
 
 
