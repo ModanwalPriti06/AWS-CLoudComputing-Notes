@@ -761,6 +761,22 @@ It's hybrod cloud storage service that connects on-premises environments to clou
 | **Volume Gateway** | Presents cloud-backed storage volumes as iSCSI block devices.                | iSCSI                      |
 | **Tape Gateway**   | Replaces physical tape libraries with virtual tapes stored in AWS.           | Virtual Tape Library (VTL) |
 
+---
+# AWS RDS(MySQL) Practical Guide
+https://www.youtube.com/watch?v=3WdoBWdkEBA&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=11
+
+- AWS RDS (Relational Database Service) is a managed database service that simplifies database setup, operation, and scaling.
+- **Purpose:** It handles administrative tasks like backups, patching, monitoring, and scaling, allowing you to focus on your application rather than database management.
+<img width="805" height="407" alt="Screenshot 2026-05-30 at 4 03 08 PM" src="https://github.com/user-attachments/assets/d506f2b4-e7f8-418b-8029-e82b8756d2b7" />
+
+### **Common Use Cases for RDS:**
+- Web Applications: Relational databases are ideal for web apps requiring structured data.
+- E-commerce Platforms: For handling inventory, customer data, and order transactions.
+- Business Applications: ERP, CRM, and financial applications with strong data integrity needs.
+
+
+
+---
 
 
 
