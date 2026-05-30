@@ -664,15 +664,47 @@ Hosting any static website, In S3 give u one feature that u can use your file as
 
 ## S3 Versioning
 
-S3 bucket me versioning enable krne se, Ham koi bhi file upload krte hai to us file ka version bhi show hota hai so we can figure out ki new file hai, below image me we can see verion Id.
+- It allows you to keep multiple versions of an object in the same bucket, providing protection against accidental deletions or overwrites.
+- When versioning is enabled, S3 stores every version of an object, allowing you to recover older versions if needed, making it ideal for data safety and backup.
 
-<img width="678" height="275" alt="Screenshot 2026-05-30 at 1 40 18 PM" src="https://github.com/user-attachments/assets/66aa4e1b-8c14-48cd-85df-ea4839e22478" />
+>[!Note]
+>S3 bucket me versioning enable krne se, Ham koi bhi file upload krte hai to us file ka version bhi show hota hai so we can figure out ki new file hai, below image me we can see verion Id. Version id tabhi dekhne ko milega jab ap file upload krne se phele s3 versioning enable krenge.
+
+<img width="478" height="275" alt="Screenshot 2026-05-30 at 1 40 18 PM" src="https://github.com/user-attachments/assets/66aa4e1b-8c14-48cd-85df-ea4839e22478" />
+
+## S3 Replication
+
+- It allows you to automatically **copy objects from one S3 bucket to another**, which can be:
+  - Within the same region (Same-Region Replication - SRR), or
+  - In different regions (Cross-Region Replication - CRR).
+- It's commonly used for compliance, redundancy, and to improve data access performance by maintaining copies closer to your users.
+
+<img width="1208" height="517" alt="Screenshot 2026-05-30 at 2 01 42 PM" src="https://github.com/user-attachments/assets/46b3ef0d-a568-4875-9e0b-4c93231a8545" />
 
 
+## S3 Storage Classes
 
+| S3 Storage Class            | Use Case                                           | Features                                                              | Cost                                                           |
+| --------------------------- | -------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------- |
+| **S3 Standard**             | Frequently accessed data                           | High durability, high availability, low latency                       | Most expensive, designed for frequent access                   |
+| **S3 Intelligent-Tiering**  | Data with unknown or unpredictable access patterns | Automatically moves data between frequent and infrequent access tiers | Slightly higher than Standard, but cost-saving based on usage  |
+| **S3 Standard-IA**          | Infrequently accessed but quickly retrievable data | Lower storage cost, higher retrieval cost                             | Lower than Standard, ideal for less frequent access            |
+| **S3 One Zone-IA**          | Non-critical, infrequently accessed data           | Stored in a single Availability Zone, lower resilience                | Cheaper than Standard-IA, suitable for non-critical data       |
+| **S3 Glacier**              | Archival data, rarely accessed                     | Very low storage cost, retrieval time ranges from minutes to hours    | Ideal for long-term archives with low cost                     |
+| **S3 Glacier Deep Archive** | Deep archival data, almost never accessed          | Lowest storage cost, retrieval time up to 12 hours                    | Cheapest storage, ideal for compliance and long-term retention |
+| **S3 Outposts**             | Local storage using AWS Outposts                   | Provides S3 APIs locally and supports on-premises requirements        | Cost depends on Outposts infrastructure usage                  |
 
+## Quick Summary
 
-
+| Storage Class           | Access Frequency  | Retrieval Time   | Availability              | Cost                     |
+| ----------------------- | ----------------- | ---------------- | ------------------------- | ------------------------ |
+| S3 Standard             | Frequent          | Milliseconds     | High                      | Highest                  |
+| S3 Intelligent-Tiering  | Variable          | Milliseconds     | High                      | Optimized automatically  |
+| S3 Standard-IA          | Infrequent        | Milliseconds     | High                      | Lower than Standard      |
+| S3 One Zone-IA          | Infrequent        | Milliseconds     | Single AZ                 | Lower than Standard-IA   |
+| S3 Glacier              | Rare              | Minutes to Hours | High                      | Very Low                 |
+| S3 Glacier Deep Archive | Very Rare         | Up to 12 Hours   | High                      | Lowest                   |
+| S3 Outposts             | Local/On-Premises | Milliseconds     | Depends on Outposts setup | Infrastructure-dependent |
 
 
 
