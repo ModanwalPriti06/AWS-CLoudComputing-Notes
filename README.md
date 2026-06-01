@@ -855,26 +855,25 @@ AWS Lambda lets you run the code without thinking about servers.
 # AWS ECS(Elastic Container Service)
 It's cloud based container management service that allow you to run and manage Docker container on a cluster of virtual servers.
 
+### Why ECS
+It's automatically handles
+- Creation
+- Management
+- Updating
 
+### ECS Terms
+- Cluster: Group of task and services, host all the resources and infrastructure.
+- Service: Handle scalability and load balancing of container.
+- Task: Represent the running container of your AWS 
 
+<img width="345" height="216" alt="Screenshot 2026-06-01 at 7 50 40 AM" src="https://github.com/user-attachments/assets/5e759027-ea7f-4e7b-82cc-151cc18d2149" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Step to create ECS
+- login on ECS it's not free tier.
+- Create cluster -> create
+- Task definition -> Create task definition
+- create service: Go cluster -> service -> create service
+- Automatic will run after deploy, and on-demand u can modify service also. 
 
 
 
