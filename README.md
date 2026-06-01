@@ -851,7 +851,9 @@ AWS Lambda lets you run the code without thinking about servers.
 - With functions like map, filter, sorted
 - For simple conditions
 
-
+---
+# AWS ECS(Elastic Container Service)
+It's cloud based container management service that allow you to run and manage Docker container on a cluster of virtual servers.
 
 
 
