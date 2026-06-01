@@ -774,9 +774,104 @@ https://www.youtube.com/watch?v=3WdoBWdkEBA&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQ
 - E-commerce Platforms: For handling inventory, customer data, and order transactions.
 - Business Applications: ERP, CRM, and financial applications with strong data integrity needs.
 
+---
 
+# AWS DynamoDB
+
+It's a fast and flexible NoSQL database services for any scale. DynamoDB is a fully managed, key-value and document database that deliver single-digit-milisecond performance at any scale.
+
+- NoSQL is a type of database designed to store and manage data in flexible, non-tabular formats, making it ideal for handling large volumes of unstructured data.
+- DynamoDB is a fully managed NoSQL database service provided by AWS. It stores data in a flexible format (key-value and document-based) and automatically handles scaling, performance, and maintenance. (Zoom, DropBox)
+- DynamoDB provide 25GB of staorage free tier.
+
+### DynamoDB Key points
+- Serverless: No need for server provisioning, software installation, maintenance, or patching.
+- Automatic Scaling: Instantly scales up or down based on demand, with no manual adjustments needed.
+- Zero Downtime: Provides continuous availability without maintenance windows.
+- On-Demand Pricing: Pay only for the read/write requests used, ideal for fluctuating workloads.
+- Idle Cost Savings: Scales down to zero during inactivity, so there's no cost when tables have no traffic.
+
+https://www.youtube.com/watch?v=7U8hEV_1uLM&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=12
+
+## DynamoDB Accelerator (DAX)
+- Fully managed in-memory cache for DynamoDB.
+- DAX offers microsecond latency, achieving up to 10x performance improvement over standard DynamoDB queries.
+- High availability and scalability: can be deployed across multiple Availability Zones (AZs).
+- DAX is designed exclusively for and tightly integrated with DynamoDB, whereas ElastiCache can be used with various databases and applications.
+
+### Key Points
+| Feature           | Description                                   |
+| ----------------- | --------------------------------------------- |
+| Fully Managed     | AWS manages setup, maintenance, and scaling   |
+| In-Memory Cache   | Stores frequently accessed data in memory     |
+| Low Latency       | Delivers microsecond response times           |
+| Performance Boost | Up to 10x faster than standard DynamoDB reads |
+| High Availability | Supports deployment across multiple AZs       |
+| DynamoDB-Specific | Works only with DynamoDB                      |
+
+### DynamoDB Global Table:
+<img width="780" height="443" alt="Screenshot 2026-06-01 at 7 06 55 AM" src="https://github.com/user-attachments/assets/17c1986d-b183-414c-967d-d588f547d582" />
 
 ---
+# AWS Lambda
+AWS Lambda lets you run the code without thinking about servers.
+- AWS Lambda is a serverless computing service that lets you run code in response to events without managing servers.
+- You just upload your code, and AWS automatically handles the rest, scaling as needed and only charging for the time your code runs.
+
+>[!Note]
+>In real life lambda function run with the help of Event-Driven Execution. 
+
+## Feature of Lambda Function
+- Event-Driven Execution
+- Autoscaling(Horizontal scaling)
+- Pay-as-You-Go
+
+## Event-Driven Execution:
+- Lambda is an event-driven service, meaning that it runs your code in response to certain triggers or events.
+- These events can come from many different AWS services like
+  - S3 (file uploads),
+  - DynamoDB (database changes),
+  - API Gateway (HTTP requests),
+  - CloudWatch (scheduled events), etc.
+
+>[!Important]
+>In lambda u can see your logs (View Cloud Watch, Monitor) and figure out your function is triggering or not for your event.
+
+## AWS Lambda Limitation
+- Execution Time Limit: Lambda functions can only run for a maximum of 15 minutes. If you need longer-running tasks, Lambda might not be the best choice.
+- Stateless: Lambda functions don't keep state between invocations, so they're best for tasks that don't require long-term memory.
+- Cold Start Delays: If a Lambda function hasn't run in a while, there's sometimes a slight delay—called a 'cold start'—when it starts up. This can add a little latency, but AWS provides ways to mitigate it for critical functions.
+
+## When to use Lambda
+- Image Processing
+- Data transformation
+- Real-time Notification
+- For short, simple operations
+- As a one-time function (temporary use)
+- With functions like map, filter, sorted
+- For simple conditions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
