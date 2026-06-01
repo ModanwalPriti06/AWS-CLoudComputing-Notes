@@ -767,7 +767,7 @@ https://www.youtube.com/watch?v=3WdoBWdkEBA&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQ
 
 - AWS RDS (Relational Database Service) is a managed database service that simplifies database setup, operation, and scaling.
 - **Purpose:** It handles administrative tasks like backups, patching, monitoring, and scaling, allowing you to focus on your application rather than database management.
-<img width="805" height="407" alt="Screenshot 2026-05-30 at 4 03 08 PM" src="https://github.com/user-attachments/assets/d506f2b4-e7f8-418b-8029-e82b8756d2b7" />
+<img width="585" height="315" alt="Screenshot 2026-06-01 at 6 42 02 AM" src="https://github.com/user-attachments/assets/4bfc7c7f-d235-44e2-860e-3bfd76bf2150" />
 
 ### **Common Use Cases for RDS:**
 - Web Applications: Relational databases are ideal for web apps requiring structured data.
