@@ -810,7 +810,7 @@ https://www.youtube.com/watch?v=7U8hEV_1uLM&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQ
 | DynamoDB-Specific | Works only with DynamoDB                      |
 
 ### DynamoDB Global Table:
-<img width="780" height="443" alt="Screenshot 2026-06-01 at 7 06 55 AM" src="https://github.com/user-attachments/assets/17c1986d-b183-414c-967d-d588f547d582" />
+<img width="580" height="343" alt="Screenshot 2026-06-01 at 7 06 55 AM" src="https://github.com/user-attachments/assets/17c1986d-b183-414c-967d-d588f547d582" />
 
 ---
 # AWS Lambda
