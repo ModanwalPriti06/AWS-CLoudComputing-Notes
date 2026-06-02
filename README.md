@@ -875,12 +875,26 @@ It's automatically handles
 - create service: Go cluster -> service -> create service
 - Automatic will run after deploy, and on-demand u can modify service also. 
 
+---
+# AWS VPC (Virtual Private Cloud)
 
+A private, isolated network within the AWS cloud where u can launch and manage your resources securely. Jab cloud par khud ka private n/w create krte hai to use VPC kahate hai.
 
+### Why need
+To securely isolated and control network environments. region(Mumbai)->Availability zone(Mumbai A, Mumbai B ...)
 
+### When u are creating VPC then what is happening?
+<img width="799" height="384" alt="Screenshot 2026-06-02 at 7 20 48 AM" src="https://github.com/user-attachments/assets/d1303fd4-bcaa-4842-8ab2-6b2894662a0e" />
 
+>[!Note]
+>for the better now about CIDR just checkout -> https://cidr.xyz/
 
+## What is Subnet?
+A subnet is a smaller, segments parts of the network that isolates and organize devices within a specific IP address range.
+<img width="630" height="351" alt="Screenshot 2026-06-02 at 7 25 40 AM" src="https://github.com/user-attachments/assets/62bcdd01-09c1-4cee-ac44-e27f03b263bc" />
 
+>[!Important]
+>Whatever will make instances it will be inside subnet as per above picture is showing.
 
 
 
