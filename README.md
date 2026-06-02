@@ -889,6 +889,14 @@ To securely isolated and control network environments. region(Mumbai)->Availabil
 >[!Note]
 >for the better now about CIDR just checkout -> https://cidr.xyz/
 
+## Step to follow creating VPC
+- Goto VPC and create VPC and add CIDR too when creating.
+- Create Subnet: Add VPC ID -> define subnet name and Azs -> create subnet button click
+- Route Table(jo routing decide krta hai) -  Define route
+- Create Internet gateway -> action and attach VPC also in IGW
+- edit subnet association which subnet add which route table becuase my default that subnet added main route (Default route)
+- create instances based on particular subnet
+
 ### What is Subnet?
 A subnet is a smaller, segments parts of the network that isolates and organize devices within a specific IP address range.
 <img width="350" height="201" alt="Screenshot 2026-06-02 at 7 25 40 AM" src="https://github.com/user-attachments/assets/62bcdd01-09c1-4cee-ac44-e27f03b263bc" />
