@@ -884,17 +884,41 @@ A private, isolated network within the AWS cloud where u can launch and manage y
 To securely isolated and control network environments. region(Mumbai)->Availability zone(Mumbai A, Mumbai B ...)
 
 ### When u are creating VPC then what is happening?
-<img width="799" height="384" alt="Screenshot 2026-06-02 at 7 20 48 AM" src="https://github.com/user-attachments/assets/d1303fd4-bcaa-4842-8ab2-6b2894662a0e" />
+<img width="509" height="254" alt="Screenshot 2026-06-02 at 7 20 48 AM" src="https://github.com/user-attachments/assets/d1303fd4-bcaa-4842-8ab2-6b2894662a0e" />
 
 >[!Note]
 >for the better now about CIDR just checkout -> https://cidr.xyz/
 
 ## What is Subnet?
 A subnet is a smaller, segments parts of the network that isolates and organize devices within a specific IP address range.
-<img width="630" height="351" alt="Screenshot 2026-06-02 at 7 25 40 AM" src="https://github.com/user-attachments/assets/62bcdd01-09c1-4cee-ac44-e27f03b263bc" />
+<img width="350" height="201" alt="Screenshot 2026-06-02 at 7 25 40 AM" src="https://github.com/user-attachments/assets/62bcdd01-09c1-4cee-ac44-e27f03b263bc" />
 
 >[!Important]
->Whatever will make instances it will be inside subnet as per above picture is showing.
+>Whatever will make EC2 instances it will be inside subnet as per above picture is showing. and subnet is creating inside availability zone.
+
+<img width="595" height="272" alt="Screenshot 2026-06-02 at 7 29 18 AM" src="https://github.com/user-attachments/assets/5c629fa8-fe11-421b-a2b0-2efed046491e" />
+
+### What happen when creating the subnet?
+<img width="618" height="171" alt="Screenshot 2026-06-02 at 7 34 12 AM" src="https://github.com/user-attachments/assets/5d0a5ff4-1989-4e0a-a8fa-1fad023bd46c" />
+
+CIDR Block Allocation: You specify a range of IP addresses (CIDR Block) within the VPC's IP address range for the subnet. This determine the pool of IP addresses available for instances in the subnet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
