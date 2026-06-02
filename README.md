@@ -881,15 +881,15 @@ It's automatically handles
 A private, isolated network within the AWS cloud where u can launch and manage your resources securely. Jab cloud par khud ka private n/w create krte hai to use VPC kahate hai.
 
 ### Why need
-To securely isolated and control network environments. region(Mumbai)->Availability zone(Mumbai A, Mumbai B ...)
+To securely isolated and control network environments. region(Mumbai)->Availability zone AZs(Mumbai A, Mumbai B ...)
 
-### When u are creating VPC then what is happening?
+#### When u are creating VPC then what is happening?
 <img width="509" height="254" alt="Screenshot 2026-06-02 at 7 20 48 AM" src="https://github.com/user-attachments/assets/d1303fd4-bcaa-4842-8ab2-6b2894662a0e" />
 
 >[!Note]
 >for the better now about CIDR just checkout -> https://cidr.xyz/
 
-## What is Subnet?
+### What is Subnet?
 A subnet is a smaller, segments parts of the network that isolates and organize devices within a specific IP address range.
 <img width="350" height="201" alt="Screenshot 2026-06-02 at 7 25 40 AM" src="https://github.com/user-attachments/assets/62bcdd01-09c1-4cee-ac44-e27f03b263bc" />
 
@@ -898,18 +898,68 @@ A subnet is a smaller, segments parts of the network that isolates and organize 
 
 <img width="595" height="272" alt="Screenshot 2026-06-02 at 7 29 18 AM" src="https://github.com/user-attachments/assets/5c629fa8-fe11-421b-a2b0-2efed046491e" />
 
-### What happen when creating the subnet?
+#### What happen when creating the subnet?
 <img width="618" height="171" alt="Screenshot 2026-06-02 at 7 34 12 AM" src="https://github.com/user-attachments/assets/5d0a5ff4-1989-4e0a-a8fa-1fad023bd46c" />
 
 CIDR Block Allocation: You specify a range of IP addresses (CIDR Block) within the VPC's IP address range for the subnet. This determine the pool of IP addresses available for instances in the subnet.
 
+### Route Table
+A route table is a set of rules, called routes, that are used to determine where network traffic from your subnets or gateway is directed. Each subnet in your VPC must be associated with a route table, which controls the routing for that subnet.
 
+| Destination   | Target                |
+| ------------- | --------------------- |
+| 0.0.0.0/0     | igw-0bc1bb62e4e4f3c3c |
+| 172.31.0.0/16 | local                 |
 
+### Internet Gateway (IGW)
+An Internet Gateway is a component that allow communication b/w instances in your VPC and the internet. How it's work see the images.
+<img width="463" height="280" alt="Screenshot 2026-06-02 at 7 41 59 AM" src="https://github.com/user-attachments/assets/748869a5-c274-40d2-8aea-11b0a94a9e6d" />
 
+### Security Group:
+Network firewall rules that control inbound and outbound traffic for instances.
 
+### Network ACL(Access control list):
+- Optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets.
+- Allow or Deny Rule.
 
+#### Key Points:
+- Acts as a firewall at the subnet level.
+- Controls inbound and outbound traffic.
+- Supports both Allow and Deny rules.
+- Can be associated with one or more subnets in a VPC.
+- Stateless: return traffic must be explicitly allowed by rules.
 
+### NAT (N/W Access Translation) Gateway:
+Enables instances in a private subnet to connect to the internet or other AWS services, but prevent the internet from initiating the connection to those instances. (One way communication like instance net gateway k through internet ka help lekar apko file downloaf krna etc provide krte hai)
 
+<img width="312" height="230" alt="Screenshot 2026-06-02 at 7 49 17 AM" src="https://github.com/user-attachments/assets/f2ddac1a-7c0e-46cb-812a-f51299741931" />
+
+### VPC Peering
+A networking connection between two VPCs that enables you to route traffic between them privately. (Your website your instance are 2 different different region so in that scenario how they both will communicate each other, for that solution we are using VPC peering) 
+<img width="512" height="180" alt="Screenshot 2026-06-02 at 7 56 38 AM" src="https://github.com/user-attachments/assets/6a85cd13-25c4-446d-ad25-298edbba85f6" />
+
+### VPC Endpoints
+Allows you to privately connect your VPC to supported AWS services and VPC endpoint services powered by AWS PrivateLink.
+<img width="222" height="208" alt="Screenshot 2026-06-02 at 7 58 43 AM" src="https://github.com/user-attachments/assets/53f6237f-5449-42a2-b8e2-4d7263eca4d2" />
+
+### Bastion Host:
+A special-purpose instaces that provides secure access to your instances in private subnets. (like a jump server b/w private and public subnet instances communication).
+<img width="234" height="230" alt="Screenshot 2026-06-02 at 8 00 31 AM" src="https://github.com/user-attachments/assets/0ec20a9c-0631-4019-82fa-e9cc5cc10034" />
+
+### Elastic IP Addresses: 
+Static IP addresses designed for dynamic cloud computing.
+
+### VPC Flow Logs:
+Capture information about the IP traffic going to and from n/w interface in your VPC. (like a logging service)
+
+### Direct Communication
+Established a dedicated network connection from your permises to AWS.
+<img width="669" height="214" alt="Screenshot 2026-06-02 at 8 05 17 AM" src="https://github.com/user-attachments/assets/d1d06b63-8c70-4933-a6aa-d51dc95ad214" />
+
+### AWS Client VPN:
+Managed VPN service that enables secure remote access to AWS resources and on-premises networks using OpenVPN-based clients.
+
+---
 
 
 
