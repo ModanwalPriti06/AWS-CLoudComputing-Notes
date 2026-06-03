@@ -1033,6 +1033,47 @@ Solution: Made different-2 instances for region
 >[!Important]
 >Route 53 provides us - Domain name, Hosted zone, Health check, Traffic flow, and Resolver.
 
+---
+
+# AWS CloudFormation
+
+AWS CloudFormation is an infrastructure as code (IaC) service that let u define, provision, and manages AWS resources in a declarative, template-based format. (Means instead of manually creating instance and all will use code to create and handle and the code file woll be json or yml format)
+
+>[!Important]
+>Ye state management bhi krta hai means- if something got fail then rollback to prev state.
+
+### Step to follow the create CloudFormation
+- Go to CloudFormation
+- Create Stack -> Next
+- fill information -> Next
+- Review and create
+- submit
+  
+<img width="535" height="188" alt="Screenshot 2026-06-03 at 8 13 36 AM" src="https://github.com/user-attachments/assets/991d6847-c82e-439a-8a34-58578957f139" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
