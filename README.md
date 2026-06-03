@@ -1020,24 +1020,18 @@ Solution: Made different-2 instances for region
 5. Health Checks: Configure health checks to monitor endpoints and trigger failover when needed.
 
 ### Types of Record
-<img width="636" height="280" alt="Screenshot 2026-06-03 at 7 56 06 AM" src="https://github.com/user-attachments/assets/c58f5e4d-44f2-4b24-bcf9-15ee78194786" />
+<img width="536" height="200" alt="Screenshot 2026-06-03 at 7 56 06 AM" src="https://github.com/user-attachments/assets/c58f5e4d-44f2-4b24-bcf9-15ee78194786" />
 
+<img width="436" height="200" alt="Screenshot 2026-06-03 at 7 57 42 AM" src="https://github.com/user-attachments/assets/48c5e013-f032-458a-8903-a6f75174d3a9" />
 
+### Usecases of Route 53
+- Hosting Websites: Manage domain names and route traffic to web applications.
+- Load Balancing: Distribute traffic across multiple endpoints using weighted or latency-based routing.
+- Disaster Recovery: Use health checks and failover routing for high availability.
+- Multi-Region Deployments: Route traffic to the closest region for low latency.
 
-
-
-
-
-
-
-
-
-
-
-- 
-
-
-
+>[!Important]
+>Route 53 provides us - Domain name, Hosted zone, Health check, Traffic flow, and Resolver.
 
 
 
