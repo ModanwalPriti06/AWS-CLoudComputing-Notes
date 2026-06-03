@@ -970,6 +970,57 @@ Managed VPN service that enables secure remote access to AWS resources and on-pr
 ---
 
 # Amazon Route 53
+Instead of any public url to get access your website u eant to any specific domain for your website then have to use AWS Route 53. Example:
+13.24.23.234 -> www.example.com
+- AWS Route 53 is a scalable DNS service for domain regristration, traffic routing, and health checking capabilities.
+
+### DNS
+- DNS, or Domain Name System, is the internet service that translates human-friendly domain names like www.example.com into machine-readable IP addresses.
+- Default port for DNS (Domain Name System) service is: 53.
+<img width="650" height="295" alt="Screenshot 2026-06-03 at 7 27 37 AM" src="https://github.com/user-attachments/assets/6ba95100-d52a-4401-b3de-f0246400dc55" />
+
+## Step for creating Route 53 (Buying from AWS)
+- Visit AWS Route 53 and open it
+- Click on get started
+- Register a domain select -> get started
+- select any of domain based on payment and all
+- Proceed to checkout  
+
+## Step for brought domain from outside(Hostinger, Godaddy)
+- Go to Hosted zone -> create host zone
+- fill the other field -> create hosted zone
+
+
+>[!Note]
+>So whenever user clicl myexample.com then it trigger Route 53 but after that where have to route that routing/rule we have to create.
+
+## Routing/Rule after hitting Route 53
+- Click on Create Record
+- Enter record name
+- Record type keep A (keeping A bcz whatever your hostname/domain is there it convert in machine IP)
+- value section enter EC2 instances public IP
+- Click create record
+
+## Global website with LOW latency
+>[!Note]
+>Latency is the time delay between sending a request and receiving a response. https://www.youtube.com/watch?v=csXEbgwH7Vs&list=PL0tP8lerTbX3mKdZYfJwXcKf6SOfmQcgl&index=17 12 min start to create diff-2 instance for solve latency region problem.
+
+Problem: Both region users are fetching data from same instance so latency different will be there
+<img width="409" height="251" alt="Screenshot 2026-06-03 at 7 45 00 AM" src="https://github.com/user-attachments/assets/bfb2ddb7-c9c9-4298-b155-ab8b4756e451" />
+
+Solution: Made different-2 instances for region
+
+<img width="409" height="251" alt="Screenshot 2026-06-03 at 7 45 14 AM" src="https://github.com/user-attachments/assets/3f8fd6a9-6fdb-48b4-b862-3c1c2a249148" />
+
+## Key Point
+1. Domain Name Registration: Register a domain and point it to AWS Route 53.
+2. Hosted Zone Creation: Create a hosted zone to manage DNS records.
+3. DNS Records: Add records (e.g., A, CNAME, MX) to route traffic to various endpoints.
+4. Routing Policies: Set up routing policies based on your needs, such as latency-based or failover routing.
+5. Health Checks: Configure health checks to monitor endpoints and trigger failover when needed.
+
+### Types of Record
+<img width="636" height="280" alt="Screenshot 2026-06-03 at 7 56 06 AM" src="https://github.com/user-attachments/assets/c58f5e4d-44f2-4b24-bcf9-15ee78194786" />
 
 
 
@@ -978,6 +1029,12 @@ Managed VPN service that enables secure remote access to AWS resources and on-pr
 
 
 
+
+
+
+
+
+- 
 
 
 
