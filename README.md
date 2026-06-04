@@ -1037,7 +1037,7 @@ Solution: Made different-2 instances for region
 
 # AWS CloudFormation
 
-AWS CloudFormation is an infrastructure as code (IaC) service that let u define, provision, and manages AWS resources in a declarative, template-based format. (Means instead of manually creating instance and all will use code to create and handle and the code file woll be json or yml format)
+AWS CloudFormation is an infrastructure as code (IaC) service that let u define, provision, and manages AWS resources in a declarative, template-based format. (Means instead of manually creating instance and all will use code to create and handle and the code file woll be json or yaml format)
 
 >[!Important]
 >Ye state management bhi krta hai means- if something got fail then rollback to prev state.
@@ -1051,19 +1051,38 @@ AWS CloudFormation is an infrastructure as code (IaC) service that let u define,
   
 <img width="535" height="188" alt="Screenshot 2026-06-03 at 8 13 36 AM" src="https://github.com/user-attachments/assets/991d6847-c82e-439a-8a34-58578957f139" />
 
+### Why use CloudFormation
+- Consistency: Define infrastructure in code.
+- Automation: Reduce manual work.
+- Repeatable: Replicate env easily.
 
+## #Features
+- Infrastructure as Code (IaC) Tool: Automates the creation, management, and updating of AWS infrastructure.
+- Declarative Language: Users define desired end states for resources, and CloudFormation handles provisioning.
+- Template-Based: Uses YAML or JSON templates to specify AWS resources and configurations.
+- AWS Native: Exclusively supports AWS resources, fully integrated with AWS services.
+- State Management: Manages state internally, eliminating the need for separate state files.
+- Stacks and Stack Sets: Organizes resources in stacks for easier management and allows for multi-account and region deployments with stack sets.
+- Cost-Free Tool: CloudFormation itself is free; you only pay for the AWS resources created.
+- Drift Detection: Identifies and reports resource changes made outside of CloudFormation to ensure resources stay aligned with the template.
 
+### Usecases
 
+- Create EC2 Instances with Security Groups and Elastic IPs
+- Provision S3 Buckets with HTTP Endpoints
+- Set Up VPCs with Subnets and Route Tables
+- Create RDS Databases with Automatic Backups
+- Deploy Lambda Functions with API Gateway Integrations
+- Set Up Elastic Load Balancers and Auto Scaling for Web Applications
+- Deploy IAM Roles, Policies, and User Access Management
 
+https://docs.aws.amazon.com/cloudformation/
+---
 
+### AWS Terraform
+Terraform is an open source Infrastructure as Code (IaC) tool. 
 
-
-
-
-
-
-
-
+#### What is IaC(Infrastructure as Code)
 
 
 
