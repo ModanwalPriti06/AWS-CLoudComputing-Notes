@@ -1083,16 +1083,36 @@ https://docs.aws.amazon.com/cloudformation/
 Terraform is an open source Infrastructure as Code (IaC) tool. 
 
 #### What is IaC(Infrastructure as Code)
+- It enables you to define, provision, and manage infrastructure across multiple cloud provider using a declarative configuration language.
+- It's support multi-cloud environments, allowing consistent and efficient infrastructure management.
+- Terraform support json format also.
 
+<img width="636" height="320" alt="Screenshot 2026-06-05 at 8 14 28 AM" src="https://github.com/user-attachments/assets/d371ea3d-ad1f-4663-be06-f91b775b0485" />
 
+Step of Terraform
+ <img width="652" height="199" alt="Screenshot 2026-06-05 at 8 15 44 AM" src="https://github.com/user-attachments/assets/c2b3780c-8ff1-4633-9cd1-0e1db6bffbbb" />
 
+### Benifit of Using IaCs tool: 
+- Consistency: Define infrastructure in code.
+- Automation: Reduce manual work
+- Repeatable: Replicate environment easily.
+- **State Management:**
+  - The state file (terraform.tfstate) maintains a detailed record of the current state of managed resources.
+  - This state file can be stored locally or remotely, with remote storage options enabling collaboration by sharing the state across teams and environments.
 
+``` Why Terraform: Multiple resource using: Count, fro_each```
 
+### Terraform Module
+A Terraform Module is like a reusable template or component.
+- Instead of writing the same Terraform code repeatedly, you create a module once and use it multiple times.
 
+### Terraform Cloud
+Terraform Cloud is a managed service provided by HashiCorp that facilitates collaboration on Terraform configurations.
 
-
-
-
-
+#### Providing features like
+- remote state management,
+- version control system (VCS) integration,
+- automated runs, and
+- secure variable management.
 
 
