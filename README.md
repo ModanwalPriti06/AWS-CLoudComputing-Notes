@@ -1145,7 +1145,7 @@ Amazon CloudFront has three types of infrastructure to securely deliver content 
 2. CloudFront Points of Presence (POPs) are situated within the AWS network and peer with internet service provider (ISP) networks. CloudFront has 600+ POPs in 100+ cities across 50+ countries.
 3. CloudFront Embedded Points of Presence are situated within internet service provider (ISP) networks, closest to end viewers. In addition to CloudFront POPs, there are 600+ embedded POPs across 200+ cities in North America, Europe, and Asia.
 
-
-
+---
+# AWS Amplify
 
 
