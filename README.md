@@ -1156,5 +1156,52 @@ Amplify is a platform that simplifies
 - Connects to backend services like user login, data storage, and APIs.
 - Offer hosting and automatic updates for web apps.
 
+---
+# Docker
+- Docker is a containerization platform for developing, packaging, shipping, and running applications.
+- It provides the ability to run an application in an isolated environment called a container.
+- Makes deployment and development efficient.
+
+## Main Component in Docker
+- DockerFile
+- Docker Image (Docker Engine ka use krke ham docker image ko run krte hai)
+- Docker Container
+- Docker Registry (Docker registry is a central repository for storing and distributing Docker images.
+  
+**Docker Registry Images**
+<img width="901" height="372" alt="Screenshot 2026-06-08 at 7 53 38 PM" src="https://github.com/user-attachments/assets/f5161d23-068c-4087-8e08-d106b878c8f2" />
+
+## What is a Container?
+- A way to package an application with all the necessary dependencies and configuration.
+- It can be easily shared
+- Makes deployment and development efficient.
+
+<img width="775" height="372" alt="Screenshot 2026-06-08 at 7 44 31 PM" src="https://github.com/user-attachments/assets/42e0a16b-1951-4456-8387-e087e55d1449" />
+
+| Feature                    | Docker Containers                                   | Virtual Machines (VMs)                                  |
+| -------------------------- | --------------------------------------------------- | ------------------------------------------------------- |
+| **OS Impact**              | Low impact on host OS                               | High impact on host OS                                  |
+| **Performance**            | Very fast startup and execution                     | Slower startup and execution                            |
+| **Disk Space Usage**       | Uses less disk space                                | Uses more disk space                                    |
+| **Resource Consumption**   | Lightweight, shares host OS kernel                  | Heavyweight, requires separate OS for each VM           |
+| **Sharing & Distribution** | Easy to share, rebuild, and distribute using images | More difficult to share and distribute                  |
+| **Encapsulation**          | Encapsulates applications and dependencies          | Encapsulates an entire machine (OS + applications)      |
+| **Boot Time**              | Starts in seconds                                   | Takes minutes to boot                                   |
+| **Portability**            | Highly portable across environments                 | Less portable due to full OS dependencies               |
+| **Isolation**              | Process-level isolation                             | Full hardware-level isolation                           |
+| **Use Case**               | Microservices, CI/CD, cloud-native applications     | Running multiple operating systems, legacy applications |
+| **Example Tools**          | Docker                                              | VMware, VirtualBox                                      |
+
+## Conclusion:
+
+- Docker is a powerful technology that allows developers to create, package, and deploy applications in containers.
+- It provides a consistent environment for development, testing, and deployment, and it's compatible with any platform that supports Docker.
+- By using Docker, developers can focus on building great applications instead of worrying about infrastructure and compatibility issues.
+
+
+
+
+
+
 
 
