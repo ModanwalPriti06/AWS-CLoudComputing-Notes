@@ -1147,5 +1147,14 @@ Amazon CloudFront has three types of infrastructure to securely deliver content 
 
 ---
 # AWS Amplify
+Amplify is a platform that simplifies
+- Building
+- Deploying and
+- Hosting full-stack web and mobiles app.
+
+## Amplify Keypoints
+- Connects to backend services like user login, data storage, and APIs.
+- Offer hosting and automatic updates for web apps.
+
 
 
