@@ -1169,14 +1169,14 @@ Amplify is a platform that simplifies
 - Docker Registry (Docker registry is a central repository for storing and distributing Docker images.
   
 **Docker Registry Images**
-<img width="901" height="372" alt="Screenshot 2026-06-08 at 7 53 38 PM" src="https://github.com/user-attachments/assets/f5161d23-068c-4087-8e08-d106b878c8f2" />
+<img width="601" height="232" alt="Screenshot 2026-06-08 at 7 53 38 PM" src="https://github.com/user-attachments/assets/f5161d23-068c-4087-8e08-d106b878c8f2" />
 
 ## What is a Container?
 - A way to package an application with all the necessary dependencies and configuration.
 - It can be easily shared
 - Makes deployment and development efficient.
 
-<img width="775" height="372" alt="Screenshot 2026-06-08 at 7 44 31 PM" src="https://github.com/user-attachments/assets/42e0a16b-1951-4456-8387-e087e55d1449" />
+<img width="575" height="252" alt="Screenshot 2026-06-08 at 7 44 31 PM" src="https://github.com/user-attachments/assets/42e0a16b-1951-4456-8387-e087e55d1449" />
 
 | Feature                    | Docker Containers                                   | Virtual Machines (VMs)                                  |
 | -------------------------- | --------------------------------------------------- | ------------------------------------------------------- |
