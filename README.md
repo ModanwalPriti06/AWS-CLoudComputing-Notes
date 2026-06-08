@@ -1198,10 +1198,38 @@ Amplify is a platform that simplifies
 - It provides a consistent environment for development, testing, and deployment, and it's compatible with any platform that supports Docker.
 - By using Docker, developers can focus on building great applications instead of worrying about infrastructure and compatibility issues.
 
+---
+# SSl/TLS (Secure Sockets Layer/ Transport Layer Security)
+Cryptographic protocols designed to provide secure communication over a computer network.
+- TLS is the successor to SSL
 
+## How SSL/TLS Secure data?
+Encrypt data and ensure its - integrity, confidentially, and authenticity between a client and server.
 
+```
+Example: Send any compition exam paper securly  
+confidentially: Paper is only accessed by exam center. (Encryption)
+integrity: Paper is not modified in between (Hashing)
+Authentication: Verifying the identity of the parties who they are supposed to be. (Certificates)
 
+```
 
+### Encryption(confidentially): 
+Converting plain text information into a coded form(cipher text). there are two types of encryption
+1. Symmetric - (Encryption and decryption same key ka use krke hota hai)
+2. Asymmetric - (Encryption and decryption different-different key ka use krke hota hai)
 
+>[!Note]
+>Encrypt (public Key), Decrypt(private key)
+
+| Feature                     | Symmetric Encryption                                       | Asymmetric Encryption                                  |
+| --------------------------- | ---------------------------------------------------------- | ------------------------------------------------ |
+| **Speed**                   | Faster and more efficient                                  | Slower compared to symmetric encryption                |
+| **Data Size**               | Suitable for large amounts of data                         | Suitable for small amounts of data                     |
+| **Keys Used**               | Uses a single secret key for encryption and decryption     | Uses a pair of keys: Public Key and Private Key        |
+| **Key Distribution**        | Challenging because the secret key must be shared securely | Simplified because the public key can be shared openly |
+| **Security of Key Sharing** | Single key must be kept secret                             | Secure even if the public key is shared                |
+| **Performance**             | High performance                                           | Lower performance                                      |
+| **Examples**                | AES, DES, 3DES                                             | RSA, ECC, Diffie-Hellman                               |
 
 
