@@ -1275,3 +1275,4 @@ A Certificate Authority (CA) is a trusted organization that issues digital certi
 4. PKCS#12 (.p12/.pfx) = certificates + private key bundled together, usually password-protected.
 
 <img width="379" height="278" alt="Screenshot 2026-06-09 at 7 26 35 PM" src="https://github.com/user-attachments/assets/35e7b708-202c-42b1-8e23-8ce49cf2b87d" />
+<img width="379" height="142" alt="Screenshot 2026-06-09 at 7 27 34 PM" src="https://github.com/user-attachments/assets/3fb032b9-fe1b-43cb-a67b-268801164985" />
