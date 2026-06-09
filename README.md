@@ -1273,3 +1273,5 @@ A Certificate Authority (CA) is a trusted organization that issues digital certi
 2. DER = compact binary form of a certificate.
 3. PKCS#7 (.p7b/.p7c) = certificate chain only (no private key).
 4. PKCS#12 (.p12/.pfx) = certificates + private key bundled together, usually password-protected.
+
+<img width="379" height="278" alt="Screenshot 2026-06-09 at 7 26 35 PM" src="https://github.com/user-attachments/assets/35e7b708-202c-42b1-8e23-8ce49cf2b87d" />
