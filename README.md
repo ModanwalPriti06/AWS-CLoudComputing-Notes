@@ -1214,7 +1214,7 @@ Authentication: Verifying the identity of the parties who they are supposed to b
 
 ```
 
-### Encryption(confidentially): 
+## 1. Encryption(confidentially): 
 Converting plain text information into a coded form(cipher text). there are two types of encryption
 1. Symmetric - (Encryption and decryption same key ka use krke hota hai)
 2. Asymmetric - (Encryption and decryption different-different key ka use krke hota hai)
@@ -1232,4 +1232,44 @@ Converting plain text information into a coded form(cipher text). there are two 
 | **Performance**             | High performance                                           | Lower performance                                      |
 | **Examples**                | AES, DES, 3DES                                             | RSA, ECC, Diffie-Hellman                               |
 
+## Hybrid Encryption
+- combines the strengths of both symmetric and asymmetric encryption to achieve efficient and secure communication.
+- Asymmetric encryption is used to securely exchange a symmetric key between parties.
+- Once the symmetric key is securely exchanged, it is used to encrypt and decrypt the actual data.
+  - Symmetric encryption is faster and more efficient, making it ideal for encrypting large amounts of data.
+ 
+>[!Note]
+>Asymmetric(DSA, RCA, ECC, ECDH) and Symmetric(AES, 3DES, RC4)
 
+## 2. Hashing 
+Hashing Used for check data not modify in b/w when they are sharing
+- HAshing is the process of converting data into a fixed-size string of characters, as a sequence of numbers and letters.
+
+#### Most Common Hashing Algo
+
+- MD5 (Message Digest Algorithm 5) (128bits)
+- SHA (Secure Hash Algorithm)
+  - sha-1
+  - sha-2/3 224 256 384 512
+Hash-based Message Authentication Code (sha256hmac)
+
+## 3. Authentication
+### what is CA(Certificate Authority)
+A Certificate Authority (CA) is a trusted organization that issues digital certificates to verify the identity of websites and enable secure, encrypted communication over the internet.
+- CAs ensure the authenticity and integrity of the SSL certificates they provide.
+
+### Formats for digital certificates
+
+| Format  | Encoding         | Common Extensions | Usage                                        | Contains Private Key                                                      |
+| ------- | ---------------- | ----------------- | -------------------------------------------- | -------------------------------------------|
+| PEM     | Base64 (text)    | .pem, .crt, .cer  | Web servers, email, TLS certificates         | No (unless the file is specifically a key file such as a PEM private key) |
+| DER     | Binary           | .der, .cer        | Java platforms, binary certificate handling  | No                                                                        |
+| PKCS#7  | Base64 or Binary | .p7b, .p7c        | Certificate chains / bundles                 | No                                                                        |
+| PKCS#12 | Binary           | .p12, .pfx        | Export/import certificates with private keys | Yes                                                                       |
+
+#### Rule of thumb
+
+1. PEM = human-readable text, most common on Linux/NGINX/Apache.
+2. DER = compact binary form of a certificate.
+3. PKCS#7 (.p7b/.p7c) = certificate chain only (no private key).
+4. PKCS#12 (.p12/.pfx) = certificates + private key bundled together, usually password-protected.
